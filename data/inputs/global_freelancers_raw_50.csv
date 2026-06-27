@@ -1,0 +1,52 @@
+﻿freelancer_ID,name,gender,age,country,language,primary_skill,years_of_experience,hourly_rate (USD),rating,is_active,client_satisfaction
+FL250950,John Weaver,m,25,Brazil,Portuguese,DevOps,7,$20,3.8,,97%
+FL250951,Bradley Harris,Male,41,United Kingdom,English,DevOps,8,50,4.8,N,75%
+FL250952,Cassandra Macdonald,f,45,Mexico,Spanish,Data Analysis,6,40,2,1,78%
+FL250953,Matthew White,m,47,Turkey,Turkish,DevOps,16,$100,3.3,0,65%
+FL250954,Miss Kimberly Marshall,F,59,United Kingdom,English,Data Analysis,40,40,2.5,TRUE,70
+FL250955,Laura Thompson,Female,25,Canada,English,Blockchain Development,6,$100,,Y,78
+FL250956,Nathan Soto,Male,27,Australia,English,Web Development,3,USD 50,,1,96%
+FL250957,Rhonda Hines,F,57,Australia,English,AI,5,USD 100,0,1,80%
+FL250958,Gabrielle Bowman,F,34,Turkey,Turkish,UI/UX Design,12,$20,1.6,yes,64%
+FL250959,Julian Edwards,M,55,France,French,UI/UX Design,33,50,0,FALSE,92%
+FL250960,Nicholas Scott,male,21,Egypt,Arabic,Blockchain Development,1,100,0,1,
+FL250961,Daniel Green,MALE,53,Netherlands,Dutch,DevOps,27,USD 20,4.7,yes,71
+FL250962,Catherine Johnston,f,21,Germany,German,UI/UX Design,1,$100,0,yes,95%
+FL250963,Brenda Koch,FEMALE,36,Brazil,Portuguese,Web Development,,20,4.1,N,86%
+FL250964,Mr. Robert Meza,male,40,Germany,German,AI,2,$30,1.3,1,77%
+FL250965,Latoya Brown,Female,59,United Kingdom,English,UI/UX Design,40,100,2.6,,
+FL250966,David Osborne III,m,45,Netherlands,Dutch,Cybersecurity,4,$20,2.7,,72%
+FL250967,David Hooper,MALE,44,South Korea,Korean,Machine Learning,9,40,,0,70%
+FL250968,Sarah Miller,FEMALE,36,United Kingdom,English,Cybersecurity,13,30,3.6,0,86%
+FL250969,Lisa Werner MD,Female,26,India,Hindi,Graphic Design,1,75,3,1,
+FL250970,Eric Jimenez,m,49,India,Hindi,Web Development,1,,0,0,82%
+FL250971,Jay Bush,m,29,France,French,Mobile Apps,3,USD 40,0,TRUE,81%
+FL250972,Johnny Rice,m,32,France,French,Graphic Design,1,$40,3.1,1,76%
+FL250973,Matthew Strong,MALE,24,Indonesia,Indonesian,Blockchain Development,3,USD 30,3.9,N,90%
+FL250974,Mark Chandler,MALE,35,South Korea,Korean,DevOps,14,30,1.6,Y,67%
+FL250975,Crystal Brown,female,43,Spain,Spanish,Blockchain Development,2,,1.8,no,61%
+FL250976,Timothy Barton,male,53,South Korea,Korean,Machine Learning,27,100,3.7,no,73%
+FL250977,Lisa Hickman,F,38,Russia,Russian,DevOps,7,75,,0,
+FL250978,Alan Mendoza,Male,57,United Kingdom,English,Cybersecurity,29,75,4.1,N,90%
+FL250979,Jason Sanders,MALE,27,China,Mandarin,Blockchain Development,5,$75,1.4,TRUE,64%
+FL250980,Charles Dean,m,43,Argentina,Spanish,Web Development,2,100,1.1,1,63%
+FL250981,Blake Newton,male,48,Canada,English,Data Analysis,18,$40,3.9,,
+FL250982,David Gonzalez,M,26,Brazil,Portuguese,Cybersecurity,8,20,3.6,0,67%
+FL250983,Cindy Williams,Female,,South Africa,Afrikaans,Graphic Design,0,$40,0,no,97%
+FL250984,Laura Wong DDS,female,50,Italy,Italian,Data Analysis,16,$75,4.5,0,69
+FL250985,Robert Moran,m,48,South Africa,Afrikaans,Web Development,8,50,,1,73%
+FL250986,Bradley Wu,m,60,Spain,Spanish,Blockchain Development,39,20,1.4,TRUE,86%
+FL250987,Daniel Thomas,Male,26,Egypt,Arabic,Machine Learning,,50,0,yes,81
+FL250988,Michelle Peterson,FEMALE,35,South Korea,Korean,Graphic Design,16,USD 100,4.3,1,74%
+FL250989,Seth Thomas,Male,23,United States,English,Blockchain Development,4,$100,2.2,1,64
+FL250990,Evan Ramos,Male,37,Australia,English,Graphic Design,4,75,3.2,FALSE,76%
+FL250991,Michelle Solis,FEMALE,21,Argentina,Spanish,AI,2,100,3.7,yes,73
+FL250992,Charlotte Taylor,FEMALE,58,Germany,German,UI/UX Design,37,USD 50,4.9,FALSE,69%
+FL250993,Sandra Preston,Female,52,Indonesia,Indonesian,Mobile Apps,32,$75,3.2,0,79%
+FL250994,Jim Weiss,male,46,Russia,Russian,Mobile Apps,8,20,2.2,,89
+FL250995,Jennifer Hinton,Female,34,South Africa,Afrikaans,DevOps,8,30,3.9,Y,95%
+FL250996,Albert Wilcox,Male,56,Turkey,Turkish,DevOps,13,100,0,no,68%
+FL250997,Cheryl Norris,f,26,Germany,German,Blockchain Development,6,USD 40,2.8,N,82
+FL250998,Kathy Watkins,female,37,Japan,Japanese,Data Analysis,15,75,,FALSE,94%
+FL250999,John Obrien,m,46,Russia,Russian,Machine Learning,22,100,2.8,yes,97
+FL251000,Dawn Green,Female,36,Mexico,Spanish,UI/UX Design,18,$20,1.7,1,72

@@ -1,0 +1,102 @@
+```csv
+Age,Salary,Gender,Department,Position,Joining Date,Performance Score,Employee Statement
+25,50000,Male,HR,Manager,2018-04-05,D,I feel motivated in my role, because I have learned to communicate more clearly with my team, over the past months.
+,65000,Female,Finance,Director,2020-02-20,F,I feel motivated in my role, because I have learned to communicate more clearly with my team, during my time in this role.
+35,60000,Female,Sales,Director,2020-01-15,C,I feel motivated in my role, because I have learned to communicate more clearly with my team, as I settled into my responsibilities.
+,50000,Female,IT,Manager,2018-04-05,A,I feel motivated in my role, because I have learned to communicate more clearly with my team, while adapting to daily routines.
+,,Female,Finance,Manager,2020-01-15,F,I feel motivated in my role, because I have learned to communicate more clearly with my team, through regular collaboration.
+,65000,Other,Marketing,Director,2019-03-25,F,I feel motivated in my role, because I have learned to communicate more clearly with my team, while working on assigned tasks.
+,50000,Male,Marketing,Clerk,2019-12-01,B,I feel motivated in my role, because I have learned to communicate more clearly with my team, as part of normal operations.
+40,50000,Other,HR,Director,2019-03-25,C,I feel motivated in my role, because I have learned to communicate more clearly with my team, during ongoing work cycles.
+40,60000,Female,Marketing,Manager,2020-01-15,C,I feel motivated in my role, because I have learned to communicate more clearly with my team, while handling routine duties.
+30,,Other,Finance,Assistant,2020-02-20,A,I feel motivated in my role, because I have learned to communicate more clearly with my team, as part of my regular workflow.
+25,70000,Male,Marketing,Analyst,2019-12-01,B,
+,70000,Other,Finance,Assistant,2019-03-25,A,I feel motivated in my role, as I became better at organizing my tasks, during my time in this role.
+30,50000,Male,IT,Assistant,2018-04-05,D,I feel motivated in my role, as I became better at organizing my tasks, as I settled into my responsibilities.
+25,55000,Other,HR,Manager,2020-02-20,F,I feel motivated in my role, as I became better at organizing my tasks, while adapting to daily routines.
+50,,Male,Marketing,Director,2019-03-25,A,I feel motivated in my role, as I became better at organizing my tasks, through regular collaboration.
+35,65000,Male,Finance,Clerk,2018-04-05,F,I feel motivated in my role, as I became better at organizing my tasks, while working on assigned tasks.
+40,55000,Female,Sales,Assistant,2020-01-15,B,I feel motivated in my role, as I became better at organizing my tasks, as part of normal operations.
+50,55000,Male,HR,Director,2018-04-05,D,I feel motivated in my role, as I became better at organizing my tasks, during ongoing work cycles.
+25,,Female,IT,Clerk,2019-03-25,B,I feel motivated in my role, as I became better at organizing my tasks, while handling routine duties.
+50,50000,Female,Finance,Assistant,2019-03-25,D,I feel motivated in my role, as I became better at organizing my tasks, as part of my regular workflow.
+35,50000,Female,IT,Clerk,2020-01-15,D,I feel motivated in my role, after understanding expectations more clearly, over the past months.
+25,50000,Other,IT,Director,2018-04-05,F,I feel motivated in my role, after understanding expectations more clearly, during my time in this role.
+50,50000,Other,Marketing,Analyst,2018-04-05,B,I feel motivated in my role, after understanding expectations more clearly, as I settled into my responsibilities.
+40,70000,Other,Marketing,Director,2020-01-15,B,I feel motivated in my role, after understanding expectations more clearly, while adapting to daily routines.
+40,50000,Other,Finance,Manager,2018-04-05,A,I feel motivated in my role, after understanding expectations more clearly, through regular collaboration.
+30,70000,Male,Sales,Clerk,2020-01-15,B,I feel motivated in my role, after understanding expectations more clearly, while working on assigned tasks.
+50,70000,Male,Finance,Analyst,2020-02-20,A,I feel motivated in my role, after understanding expectations more clearly, as part of normal operations.
+,50000,Other,Sales,Clerk,2019-03-25,C,I feel motivated in my role, after understanding expectations more clearly, during ongoing work cycles.
+50,60000,Male,IT,Clerk,2020-02-20,C,I feel motivated in my role, after understanding expectations more clearly, while handling routine duties.
+25,65000,Male,HR,Assistant,2019-12-01,C,I feel motivated in my role, after understanding expectations more clearly, as part of my regular workflow.
+25,55000,Female,Finance,Manager,2019-12-01,B,I feel motivated in my role, by improving how I plan my work, over the past months.
+50,70000,Female,Finance,Clerk,2019-12-01,B,I feel motivated in my role, by improving how I plan my work, during my time in this role.
+35,,Female,Sales,Director,2020-01-15,A,I feel motivated in my role, by improving how I plan my work, as I settled into my responsibilities.
+40,,Female,IT,Director,2018-04-05,D,I feel motivated in my role, by improving how I plan my work, while adapting to daily routines.
+25,65000,Male,IT,Assistant,2020-02-20,A,I feel motivated in my role, by improving how I plan my work, through regular collaboration.
+40,,Other,Sales,Manager,2020-02-20,C,I feel motivated in my role, by improving how I plan my work, while working on assigned tasks.
+25,60000,Male,IT,Manager,2020-02-20,A,I feel motivated in my role, by improving how I plan my work, as part of normal operations.
+30,,Male,Marketing,Director,2020-02-20,D,I feel motivated in my role, by improving how I plan my work, during ongoing work cycles.
+,55000,Male,HR,Analyst,2019-12-01,B,I feel motivated in my role, by improving how I plan my work, while handling routine duties.
+25,55000,Female,Finance,Assistant,2020-02-20,A,I feel motivated in my role, by improving how I plan my work, as part of my regular workflow.
+25,70000,Female,HR,Assistant,2018-04-05,C,I feel motivated in my role, through experience working with different people, over the past months.
+30,50000,Female,Finance,Director,2019-12-01,C,I feel motivated in my role, through experience working with different people, during my time in this role.
+25,60000,Other,Marketing,Director,2020-02-20,B,I feel motivated in my role, through experience working with different people, as I settled into my responsibilities.
+35,70000,Male,IT,Analyst,2020-01-15,A,I feel motivated in my role, through experience working with different people, while adapting to daily routines.
+,60000,Other,Sales,Analyst,2019-03-25,D,I feel motivated in my role, through experience working with different people, through regular collaboration.
+25,50000,Female,Marketing,Manager,2019-03-25,B,I feel motivated in my role, through experience working with different people, while working on assigned tasks.
+30,,Other,HR,Assistant,2019-03-25,A,I feel motivated in my role, through experience working with different people, as part of normal operations.
+35,,Male,Sales,Assistant,2019-12-01,F,I feel motivated in my role, through experience working with different people, during ongoing work cycles.
+50,50000,Male,IT,Director,2020-02-20,C,I feel motivated in my role, through experience working with different people, while handling routine duties.
+30,70000,Female,Marketing,Manager,2019-12-01,D,I feel motivated in my role, through experience working with different people, as part of my regular workflow.
+30,50000,Female,Sales,Assistant,2018-04-05,D,I feel motivated in my role, as I learned to handle feedback constructively, over the past months.
+35,65000,Other,Marketing,Manager,2020-01-15,D,
+30,55000,Female,Marketing,Manager,2020-01-15,C,I feel motivated in my role, as I learned to handle feedback constructively, as I settled into my responsibilities.
+35,70000,Female,IT,Director,2019-03-25,A,I feel motivated in my role, as I learned to handle feedback constructively, while adapting to daily routines.
+,60000,Male,Finance,Manager,2019-03-25,B,I feel motivated in my role, as I learned to handle feedback constructively, through regular collaboration.
+35,65000,Female,Sales,Analyst,2019-03-25,A,I feel motivated in my role, as I learned to handle feedback constructively, while working on assigned tasks.
+35,70000,Female,IT,Analyst,2020-02-20,B,I feel motivated in my role, as I learned to handle feedback constructively, as part of normal operations.
+,50000,Male,Marketing,Clerk,2018-04-05,D,I feel motivated in my role, as I learned to handle feedback constructively, during ongoing work cycles.
+35,50000,Male,IT,Director,2018-04-05,A,I feel motivated in my role, as I learned to handle feedback constructively, while handling routine duties.
+35,50000,Other,Finance,Clerk,2018-04-05,D,I feel motivated in my role, as I learned to handle feedback constructively, as part of my regular workflow.
+50,50000,Female,Sales,Analyst,2018-04-05,F,I feel motivated in my role, by becoming more aware of priorities, over the past months.
+25,60000,Male,Finance,Clerk,2019-03-25,D,I feel motivated in my role, by becoming more aware of priorities, during my time in this role.
+,65000,Other,HR,Director,2020-01-15,D,I feel motivated in my role, by becoming more aware of priorities, as I settled into my responsibilities.
+50,,Other,Sales,Director,2019-03-25,B,I feel motivated in my role, by becoming more aware of priorities, while adapting to daily routines.
+40,55000,Female,Finance,Manager,2018-04-05,F,I feel motivated in my role, by becoming more aware of priorities, through regular collaboration.
+25,60000,Female,Marketing,Assistant,2019-03-25,D,I feel motivated in my role, by becoming more aware of priorities, while working on assigned tasks.
+25,60000,Other,Sales,Manager,2018-04-05,D,I feel motivated in my role, by becoming more aware of priorities, as part of normal operations.
+40,,Male,Sales,Director,2019-12-01,F,I feel motivated in my role, by becoming more aware of priorities, during ongoing work cycles.
+35,,Other,IT,Analyst,2020-01-15,F,I feel motivated in my role, by becoming more aware of priorities, while handling routine duties.
+50,55000,Female,Marketing,Analyst,2019-12-01,A,I feel motivated in my role, by becoming more aware of priorities, as part of my regular workflow.
+30,55000,Male,HR,Manager,2020-02-20,B,I feel motivated in my role, through practice and repetition, over the past months.
+,,Male,Finance,Director,2019-03-25,F,I feel motivated in my role, through practice and repetition, during my time in this role.
+30,50000,Other,IT,Analyst,2020-02-20,F,I feel motivated in my role, through practice and repetition, as I settled into my responsibilities.
+40,60000,Female,Finance,Director,2019-03-25,C,I feel motivated in my role, through practice and repetition, while adapting to daily routines.
+25,70000,Other,HR,Analyst,2019-12-01,F,I feel motivated in my role, through practice and repetition, through regular collaboration.
+25,55000,Other,HR,Director,2018-04-05,B,I feel motivated in my role, through practice and repetition, while working on assigned tasks.
+,55000,Other,Sales,Clerk,2018-04-05,D,I feel motivated in my role, through practice and repetition, as part of normal operations.
+25,,Male,HR,Director,2019-03-25,D,I feel motivated in my role, through practice and repetition, during ongoing work cycles.
+25,65000,Male,Finance,Director,2018-04-05,D,I feel motivated in my role, through practice and repetition, while handling routine duties.
+,70000,Female,Marketing,Manager,2019-12-01,D,I feel motivated in my role, through practice and repetition, as part of my regular workflow.
+50,70000,Female,Marketing,Clerk,2018-04-05,C,I feel motivated in my role, as I improved my time management, over the past months.
+50,55000,Other,Sales,Assistant,2019-12-01,F,I feel motivated in my role, as I improved my time management, during my time in this role.
+,50000,Other,Finance,Director,2020-02-20,D,
+,65000,Other,Finance,Assistant,2019-12-01,A,I feel motivated in my role, as I improved my time management, while adapting to daily routines.
+25,70000,Female,HR,Analyst,2020-01-15,D,
+25,55000,Male,Finance,Assistant,2020-01-15,F,I feel motivated in my role, as I improved my time management, while working on assigned tasks.
+40,70000,Male,IT,Director,2020-01-15,D,
+50,65000,Other,HR,Assistant,2019-03-25,C,I feel motivated in my role, as I improved my time management, during ongoing work cycles.
+35,65000,Other,IT,Manager,2019-03-25,B,I feel motivated in my role, as I improved my time management, while handling routine duties.
+35,60000,Other,Sales,Manager,2019-03-25,B,I feel motivated in my role, as I improved my time management, as part of my regular workflow.
+35,,Other,Marketing,Assistant,2019-12-01,F,I feel motivated in my role, by paying closer attention to details, over the past months.
+50,,Female,Sales,Manager,2019-03-25,B,I feel motivated in my role, by paying closer attention to details, during my time in this role.
+50,55000,Male,Marketing,Manager,2020-02-20,B,I feel motivated in my role, by paying closer attention to details, as I settled into my responsibilities.
+40,65000,Other,Sales,Assistant,2020-01-15,A,I feel motivated in my role, by paying closer attention to details, while adapting to daily routines.
+25,60000,Female,Finance,Clerk,2020-01-15,F,I feel motivated in my role, by paying closer attention to details, through regular collaboration.
+40,60000,Other,IT,Clerk,2020-01-15,F,I feel motivated in my role, by paying closer attention to details, while working on assigned tasks.
+40,70000,Other,Marketing,Analyst,2019-03-25,B,I feel motivated in my role, by paying closer attention to details, as part of normal operations.
+50,70000,Male,HR,Manager,2019-12-01,B,I feel motivated in my role, by paying closer attention to details, during ongoing work cycles.
+35,60000,Other,IT,Assistant,2018-04-05,B,
+```

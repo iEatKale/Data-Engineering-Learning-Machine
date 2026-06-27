@@ -1,0 +1,228 @@
+{
+  "target_columns": [
+    "Age",
+    "Salary",
+    "Gender",
+    "Department",
+    "Position",
+    "Joining Date",
+    "Performance Score",
+    "Employee Statement",
+    "Age_status",
+    "Salary_status",
+    "Gender_status",
+    "Department_status",
+    "Position_status",
+    "Joining Date_status",
+    "Performance Score_status",
+    "Employee Statement_status",
+    "Salary_validated",
+    "Gender_validated",
+    "Position_validated",
+    "Joining Date_validated",
+    "Performance Score_validated",
+    "Department_validated",
+    "Age_validated",
+    "Employee Statement_validated"
+  ],
+  "rename_map": {
+    "Age": "Age",
+    "Salary": "Salary",
+    "Gender": "Gender",
+    "Department": "Department",
+    "Position": "Position",
+    "Joining Date": "Joining Date",
+    "Performance Score": "Performance Score",
+    "Employee Statement": "Employee Statement",
+    "Age_status": "Age_status",
+    "Salary_status": "Salary_status",
+    "Gender_status": "Gender_status",
+    "Department_status": "Department_status",
+    "Position_status": "Position_status",
+    "Joining Date_status": "Joining Date_status",
+    "Performance Score_status": "Performance Score_status",
+    "Employee Statement_status": "Employee Statement_status",
+    "Salary_validated": "Salary_validated",
+    "Gender_validated": "Gender_validated",
+    "Position_validated": "Position_validated",
+    "Joining Date_validated": "Joining Date_validated",
+    "Performance Score_validated": "Performance Score_validated",
+    "Department_validated": "Department_validated",
+    "Age_validated": "Age_validated",
+    "Employee Statement_validated": "Employee Statement_validated"
+  },
+  "value_normalisation": {
+    "Age": {
+      "allowed_types": [
+        "integer"
+      ],
+      "special_values": {
+        "thirty": 30
+      }
+    },
+    "Salary": {
+      "allowed_types": [
+        "integer"
+      ],
+      "special_values": {
+        "SIXTY THOUSAND": 60000,
+        "NAN": "missing"
+      }
+    },
+    "Gender": {
+      "allowed_values": [
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "case_insensitive": true
+    },
+    "Department": {
+      "allowed_values": [
+        "HR",
+        "Finance",
+        "Marketing",
+        "IT",
+        "Sales"
+      ],
+      "case_insensitive": true
+    },
+    "Position": {
+      "allowed_values": [
+        "Director",
+        "Manager",
+        "Analyst",
+        "Clerk",
+        "Assistant"
+      ],
+      "case_insensitive": true
+    },
+    "Joining Date": {
+      "allowed_formats": [
+        "dd-MMM-yy",
+        "yyyy.MM.dd",
+        "M/d/yyyy",
+        "M/d/yy"
+      ],
+      "standard_format": "yyyy-MM-dd"
+    },
+    "Performance Score": {
+      "allowed_values": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F"
+      ],
+      "case_insensitive": true
+    },
+    "Employee Statement": {
+      "type": "string"
+    },
+    "*_status": {
+      "allowed_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "*_validated": {
+      "allowed_values": [
+        0,
+        1
+      ]
+    }
+  },
+  "parsing_rules": {
+    "Age": {
+      "convert_words_to_numbers": true,
+      "strip_whitespace": true,
+      "parse_as_integer": true,
+      "unparseable_to_missing": true
+    },
+    "Salary": {
+      "strip_whitespace": true,
+      "case_insensitive_map": {
+        "SIXTY THOUSAND": 60000,
+        "NAN": null
+      },
+      "parse_as_integer": true,
+      "unparseable_to_missing": true
+    },
+    "Gender": {
+      "strip_whitespace": true,
+      "capitalize_first_letter": true,
+      "map_unknown_to_other": true
+    },
+    "Department": {
+      "strip_whitespace": true,
+      "capitalize_first_letter": true
+    },
+    "Position": {
+      "strip_whitespace": true,
+      "capitalize_first_letter": true
+    },
+    "Joining Date": {
+      "parse_multiple_date_formats": [
+        "dd-MMM-yy",
+        "yyyy.MM.dd",
+        "M/d/yyyy",
+        "M/d/yy"
+      ],
+      "output_format": "yyyy-MM-dd",
+      "unparseable_to_missing": true
+    },
+    "Performance Score": {
+      "strip_whitespace": true,
+      "uppercase": true,
+      "allowed_values": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F"
+      ],
+      "unallowed_to_missing": true
+    },
+    "Employee Statement": {
+      "strip_whitespace": true
+    },
+    "*_status": {
+      "parse_as_integer": true,
+      "unparseable_to_missing": true
+    },
+    "*_validated": {
+      "parse_as_integer": true,
+      "unparseable_to_missing": true
+    }
+  },
+  "missing_value_policy": {
+    "numeric_fields": {
+      "Age": -1,
+      "Salary": -1
+    },
+    "categorical_fields": {
+      "Gender": "Other",
+      "Department": "Unknown",
+      "Position": "Unknown",
+      "Performance Score": "Unknown"
+    },
+    "date_fields": {
+      "Joining Date": "1900-01-01"
+    },
+    "text_fields": {
+      "Employee Statement": ""
+    },
+    "status_fields": 0,
+    "validated_fields": 0,
+    "general_missing_representation": ""
+  },
+  "row_policy": {
+    "drop_rows": false
+  }
+}

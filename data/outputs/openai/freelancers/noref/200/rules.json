@@ -1,0 +1,119 @@
+{
+  "target_columns": [
+    "freelancer_ID",
+    "name",
+    "gender",
+    "age",
+    "country",
+    "language",
+    "primary_skill",
+    "years_of_experience",
+    "hourly_rate_usd",
+    "rating",
+    "is_active",
+    "client_satisfaction"
+  ],
+  "rename_map": {
+    "freelancer_ID": "freelancer_ID",
+    "name": "name",
+    "gender": "gender",
+    "age": "age",
+    "country": "country",
+    "language": "language",
+    "primary_skill": "primary_skill",
+    "years_of_experience": "years_of_experience",
+    "hourly_rate (USD)": "hourly_rate_usd",
+    "rating": "rating",
+    "is_active": "is_active",
+    "client_satisfaction": "client_satisfaction"
+  },
+  "value_normalisation": {
+    "gender": [
+      "Male",
+      "Female"
+    ],
+    "is_active": [
+      "1",
+      "0"
+    ],
+    "client_satisfaction": "percentage as float 0-100"
+  },
+  "parsing_rules": {
+    "numeric_fields": {
+      "age": {
+        "type": "integer",
+        "allow_empty": true
+      },
+      "years_of_experience": {
+        "type": "integer",
+        "allow_empty": true
+      },
+      "hourly_rate_usd": {
+        "type": "float",
+        "currency_symbols": [
+          "$",
+          "USD"
+        ],
+        "strip_non_numeric": true,
+        "allow_empty": true
+      },
+      "rating": {
+        "type": "float",
+        "allow_empty": true
+      },
+      "client_satisfaction": {
+        "type": "percentage",
+        "allow_empty": true
+      }
+    },
+    "categorical_fields": {
+      "gender": {
+        "mapping": {
+          "f": "Female",
+          "female": "Female",
+          "F": "Female",
+          "FEMALE": "Female",
+          "m": "Male",
+          "male": "Male",
+          "M": "Male",
+          "MALE": "Male"
+        }
+      },
+      "is_active": {
+        "mapping": {
+          "yes": "1",
+          "y": "1",
+          "true": "1",
+          "1": "1",
+          "no": "0",
+          "n": "0",
+          "false": "0",
+          "0": "0"
+        }
+      }
+    }
+  },
+  "missing_value_policy": {
+    "numeric_fields": {
+      "age": -1,
+      "years_of_experience": -1,
+      "hourly_rate_usd": -1,
+      "rating": -1,
+      "client_satisfaction": -1
+    },
+    "categorical_fields": {
+      "gender": "Unknown",
+      "is_active": "0"
+    },
+    "string_fields": {
+      "name": "",
+      "freelancer_ID": "",
+      "country": "",
+      "language": "",
+      "primary_skill": ""
+    }
+  },
+  "row_policy": {
+    "drop_rows": false
+  }
+}

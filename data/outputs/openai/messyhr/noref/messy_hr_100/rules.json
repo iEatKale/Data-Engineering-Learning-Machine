@@ -1,0 +1,139 @@
+{
+  "target_columns": [
+    "Age",
+    "Salary",
+    "Gender",
+    "Department",
+    "Position",
+    "Joining Date",
+    "Performance Score",
+    "Employee Statement",
+    "Age_status",
+    "Salary_status",
+    "Gender_status",
+    "Department_status",
+    "Position_status",
+    "Joining Date_status",
+    "Performance Score_status",
+    "Employee Statement_status",
+    "Salary_validated",
+    "Gender_validated",
+    "Position_validated",
+    "Joining Date_validated",
+    "Performance Score_validated",
+    "Department_validated",
+    "Age_validated",
+    "Employee Statement_validated"
+  ],
+  "rename_map": {
+    "Age": "Age",
+    "Salary": "Salary",
+    "Gender": "Gender",
+    "Department": "Department",
+    "Position": "Position",
+    "Joining Date": "Joining Date",
+    "Performance Score": "Performance Score",
+    "Employee Statement": "Employee Statement",
+    "Age_status": "Age_status",
+    "Salary_status": "Salary_status",
+    "Gender_status": "Gender_status",
+    "Department_status": "Department_status",
+    "Position_status": "Position_status",
+    "Joining Date_status": "Joining Date_status",
+    "Performance Score_status": "Performance Score_status",
+    "Employee Statement_status": "Employee Statement_status",
+    "Salary_validated": "Salary_validated",
+    "Gender_validated": "Gender_validated",
+    "Position_validated": "Position_validated",
+    "Joining Date_validated": "Joining Date_validated",
+    "Performance Score_validated": "Performance Score_validated",
+    "Department_validated": "Department_validated",
+    "Age_validated": "Age_validated",
+    "Employee Statement_validated": "Employee Statement_validated"
+  },
+  "value_normalisation": {
+    "Age": {
+      "type": "integer",
+      "rules": "Convert textual numbers (e.g., 'thirty') to integers; if unconvertible or missing, represent as missing"
+    },
+    "Salary": {
+      "type": "integer",
+      "rules": "Convert numeric strings and spelled-out numbers (e.g., 'SIXTY THOUSAND') to integer values; treat 'NAN' and similar as missing"
+    },
+    "Gender": {
+      "allowed_values": [
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "rules": "Standardize case to title case; map any invalid or missing to 'Other'"
+    },
+    "Department": {
+      "allowed_values": [
+        "HR",
+        "Finance",
+        "Sales",
+        "IT",
+        "Marketing"
+      ],
+      "rules": "Standardize case to title case; preserve original values if not in list"
+    },
+    "Position": {
+      "rules": "Preserve original values; correct obvious typos if identifiable (e.g., 'Mr.' to 'Manager' if contextually clear), else keep as is"
+    },
+    "Joining Date": {
+      "type": "date",
+      "format": "YYYY-MM-DD",
+      "rules": "Parse various date formats (e.g., '05-Apr-18', '2019.12.01', '2/20/2020') to ISO 8601 date format; if unparseable or missing, represent as missing"
+    },
+    "Performance Score": {
+      "allowed_values": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        "MA"
+      ],
+      "rules": "Standardize to uppercase; treat unrecognized or missing as missing"
+    },
+    "Employee Statement": {
+      "rules": "Preserve original text; trim leading/trailing whitespace"
+    },
+    "Status columns (Age_status, Salary_status, Gender_status, Department_status, Position_status, Joining Date_status, Performance Score_status, Employee Statement_status)": {
+      "type": "integer",
+      "rules": "Preserve as integer; treat missing or non-integer as missing"
+    },
+    "Validated columns (Salary_validated, Gender_validated, Position_validated, Joining Date_validated, Performance Score_validated, Department_validated, Age_validated, Employee Statement_validated)": {
+      "type": "integer",
+      "rules": "Preserve as integer; treat missing or non-integer as missing"
+    }
+  },
+  "parsing_rules": {
+    "numeric_fields": {
+      "Age": "Convert textual numbers to integers (e.g., 'thirty' to 30); if conversion fails or missing, use missing value policy",
+      "Salary": "Convert spelled-out numbers (e.g., 'SIXTY THOUSAND') to integer (60000); parse numeric strings; treat 'NAN' and similar as missing"
+    },
+    "categorical_fields": {
+      "Gender": "Normalize to title case; map invalid or missing to 'Other'",
+      "Department": "Normalize to title case; preserve unknown values",
+      "Performance Score": "Uppercase; allow only specified values; else missing"
+    },
+    "date_fields": {
+      "Joining Date": "Parse multiple date formats to ISO 8601 (YYYY-MM-DD); if unparseable or missing, use missing value policy"
+    },
+    "text_fields": {
+      "Employee Statement": "Trim whitespace; preserve original text"
+    }
+  },
+  "missing_value_policy": {
+    "numeric": -1,
+    "categorical": "Unknown",
+    "date": "1900-01-01",
+    "text": "",
+    "status_and_validated": -1
+  },
+  "row_policy": {
+    "drop_rows": false
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "target_columns": [
+    "freelancer_id",
+    "name",
+    "gender",
+    "age",
+    "country",
+    "language",
+    "primary_skill",
+    "years_of_experience",
+    "hourly_rate_usd",
+    "rating",
+    "is_active",
+    "client_satisfaction_percentage"
+  ],
+  "rename_map": {
+    "freelancer_ID": "freelancer_id",
+    "name": "name",
+    "gender": "gender",
+    "age": "age",
+    "country": "country",
+    "language": "language",
+    "primary_skill": "primary_skill",
+    "years_of_experience": "years_of_experience",
+    "hourly_rate (USD)": "hourly_rate_usd",
+    "rating": "rating",
+    "is_active": "is_active",
+    "client_satisfaction": "client_satisfaction_percentage"
+  },
+  "value_normalisation": {
+    "gender": {
+      "allowed_values": [
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "case_sensitive": false,
+      "default": "Other"
+    },
+    "country": {
+      "allowed_values": [
+        "Russia",
+        "Egypt",
+        "Australia",
+        "Mexico",
+        "United Kingdom",
+        "Argentina",
+        "Japan",
+        "South Korea",
+        "Brazil",
+        "United States",
+        "Germany",
+        "France",
+        "Netherlands",
+        "Canada",
+        "India",
+        "Spain",
+        "Italy",
+        "China",
+        "South Africa",
+        "Turkey",
+        "Indonesia",
+        "Afrikaans",
+        "Portugal",
+        "Dutch",
+        "Hindi",
+        "Mandarin",
+        "Arabic",
+        "Japanese",
+        "Spanish",
+        "English"
+      ],
+      "case_sensitive": false,
+      "default": "Unknown"
+    },
+    "language": {
+      "allowed_values": [
+        "Russian",
+        "Arabic",
+        "English",
+        "Spanish",
+        "Portuguese",
+        "German",
+        "French",
+        "Dutch",
+        "Hindi",
+        "Mandarin",
+        "Japanese",
+        "Korean",
+        "Turkish",
+        "Italian",
+        "Indonesian",
+        "Afrikaans",
+        "Russian",
+        "Arabic",
+        "Japanese",
+        "Chinese"
+      ],
+      "case_sensitive": false,
+      "default": "Unknown"
+    },
+    "primary_skill": {
+      "allowed_values": [
+        "UI/UX Design",
+        "Web Development",
+        "Data Analysis",
+        "DevOps",
+        "Blockchain Development",
+        "Mobile Apps",
+        "AI",
+        "Cybersecurity",
+        "Graphic Design",
+        "Machine Learning"
+      ],
+      "case_sensitive": false,
+      "default": "Other"
+    },
+    "client_satisfaction_percentage": {
+      "allowed_values": {
+        "type": "range",
+        "min": 0,
+        "max": 100,
+        "step": 1
+      },
+      "default": 0
+    }
+  },
+  "parsing_rules": {
+    "numeric_fields": {
+      "age": {
+        "type": "int",
+        "min": 18,
+        "max": 100,
+        "default": null
+      },
+      "years_of_experience": {
+        "type": "int",
+        "min": 0,
+        "max": 50,
+        "default": null
+      },
+      "hourly_rate_usd": {
+        "type": "float",
+        "min": 0,
+        "default": null,
+        "currency_cleanup": {
+          "remove_prefix": [
+            "USD ",
+            "$"
+          ],
+          "remove_suffix": [
+            "USD",
+            "$"
+          ]
+        }
+      }
+    },
+    "categorical_fields": {
+      "gender": {
+        "cleanup": {
+          "map": {
+            "f": "Female",
+            "m": "Male",
+            "female": "Female",
+            "male": "Male",
+            "F": "Female",
+            "M": "Male",
+            "FEMALE": "Female",
+            "MALE": "Male"
+          }
+        }
+      },
+      "is_active": {
+        "cleanup": {
+          "map": {
+            "1": true,
+            "yes": true,
+            "Y": true,
+            "TRUE": true,
+            "0": false,
+            "no": false,
+            "N": false,
+            "FALSE": false
+          }
+        }
+      }
+    },
+    "percentage_fields": {
+      "client_satisfaction_percentage": {
+        "type": "float",
+        "min": 0,
+        "max": 100,
+        "cleanup": {
+          "remove_suffix": [
+            "%"
+          ],
+          "default": null
+        }
+      }
+    },
+    "rating": {
+      "type": "float",
+      "min": 0,
+      "max": 5,
+      "default": null
+    }
+  },
+  "missing_value_policy": {
+    "strategy": {
+      "numeric_fields": "null",
+      "categorical_fields": "default",
+      "boolean_fields": "false",
+      "percentage_fields": 0,
+      "rating": 0
+    },
+    "unparseable_values": {
+      "numeric_fields": "null",
+      "categorical_fields": "default",
+      "boolean_fields": "false"
+    }
+  },
+  "row_policy": {
+    "drop_rows": false
+  }
+}

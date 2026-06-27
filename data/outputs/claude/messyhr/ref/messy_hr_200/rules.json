@@ -1,0 +1,84 @@
+{
+  "target_columns": [
+    "Age",
+    "Salary",
+    "Gender",
+    "Department",
+    "Position",
+    "Joining Date",
+    "Performance Score",
+    "Employee Statement",
+    "Age_status",
+    "Salary_status",
+    "Gender_status",
+    "Department_status",
+    "Position_status",
+    "Joining Date_status",
+    "Performance Score_status",
+    "Employee Statement_status",
+    "Salary_validated",
+    "Gender_validated",
+    "Position_validated",
+    "Joining Date_validated",
+    "Performance Score_validated",
+    "Department_validated",
+    "Age_validated",
+    "Employee Statement_validated"
+  ],
+  "rename_map": {},
+  "value_normalisation": {
+    "Gender": [
+      "Male",
+      "Female",
+      "Other"
+    ],
+    "Department": [
+      "Marketing",
+      "Finance",
+      "Sales",
+      "IT",
+      "HR"
+    ],
+    "Position": [
+      "Director",
+      "Manager",
+      "Clerk",
+      "Analyst",
+      "Assistant"
+    ],
+    "Performance Score": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "F"
+    ]
+  },
+  "parsing_rules": {
+    "Age": {
+      "type": "integer",
+      "description": "Convert text numbers (e.g., 'thirty') to numeric values"
+    },
+    "Salary": {
+      "type": "integer",
+      "description": "Convert text representations (e.g., 'SIXTY THOUSAND') to numeric values, handle ' NAN ' as NULL"
+    },
+    "Joining Date": {
+      "type": "date",
+      "input_formats": [
+        "M/DD/YYYY",
+        "DD-MMM-YY",
+        "YYYY.MM.DD"
+      ],
+      "output_format": "DD/MM/YYYY"
+    }
+  },
+  "missing_value_policy": {
+    "numeric_fields": "NULL",
+    "text_fields": "",
+    "description": "Missing numeric values represented as NULL, missing text fields as empty string"
+  },
+  "row_policy": {
+    "drop_rows": false
+  }
+}

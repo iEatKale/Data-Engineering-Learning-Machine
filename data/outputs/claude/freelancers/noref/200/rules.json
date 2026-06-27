@@ -1,0 +1,113 @@
+{
+  "target_columns": [
+    "freelancer_ID",
+    "name",
+    "gender",
+    "age",
+    "country",
+    "language",
+    "primary_skill",
+    "years_of_experience",
+    "hourly_rate_usd",
+    "rating",
+    "is_active",
+    "client_satisfaction"
+  ],
+  "rename_map": {
+    "freelancer_ID": "freelancer_ID",
+    "name": "name",
+    "gender": "gender",
+    "age": "age",
+    "country": "country",
+    "language": "language",
+    "primary_skill": "primary_skill",
+    "years_of_experience": "years_of_experience",
+    "hourly_rate (USD)": "hourly_rate_usd",
+    "rating": "rating",
+    "is_active": "is_active",
+    "client_satisfaction": "client_satisfaction"
+  },
+  "value_normalisation": {
+    "gender": {
+      "standard_values": [
+        "Male",
+        "Female"
+      ],
+      "mapping": {
+        "M": "Male",
+        "m": "Male",
+        "Male": "Male",
+        "F": "Female",
+        "f": "Female",
+        "Female": "Female",
+        "FEMALE": "Female"
+      }
+    },
+    "is_active": {
+      "standard_values": [
+        0,
+        1
+      ],
+      "mapping": {
+        "0": 0,
+        "1": 1,
+        "yes": 1,
+        "Y": 1,
+        "TRUE": 1,
+        "no": 0,
+        "N": 0,
+        "FALSE": 0
+      }
+    },
+    "primary_skill": {
+      "standard_values": [
+        "UI/UX Design",
+        "Web Development",
+        "Data Analysis",
+        "DevOps",
+        "Blockchain Development",
+        "Mobile Apps",
+        "AI",
+        "Cybersecurity",
+        "Machine Learning",
+        "Graphic Design"
+      ]
+    }
+  },
+  "parsing_rules": {
+    "hourly_rate_usd": {
+      "type": "numeric",
+      "description": "Remove currency symbols (USD, $) and convert to integer",
+      "pattern": "extract numeric value only"
+    },
+    "rating": {
+      "type": "numeric",
+      "description": "Convert to float, range 0-5",
+      "missing_value": "NA"
+    },
+    "client_satisfaction": {
+      "type": "numeric",
+      "description": "Remove % symbol and convert to integer (0-100)",
+      "pattern": "extract numeric value only"
+    },
+    "age": {
+      "type": "numeric",
+      "description": "Convert to integer",
+      "missing_value": "NA"
+    },
+    "years_of_experience": {
+      "type": "numeric",
+      "description": "Convert to integer",
+      "missing_value": "NA"
+    }
+  },
+  "missing_value_policy": {
+    "representation": "NA",
+    "numeric_fields": "NA",
+    "categorical_fields": "NA",
+    "description": "Use NA for all missing or unparseable values"
+  },
+  "row_policy": {
+    "drop_rows": false
+  }
+}

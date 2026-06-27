@@ -1,0 +1,85 @@
+===INDUCE_RULES===
+You are a data engineering assistant.
+
+Task: Infer transformation rules by comparing the DIRTY CSV and CLEAN CSV.
+
+Output format requirements (VERY IMPORTANT):
+- Return a SINGLE JSON object and NOTHING ELSE.
+- Use DOUBLE QUOTES for all keys and all string values.
+- Do NOT include markdown, code fences, comments, or trailing commas.
+
+Your JSON object MUST contain exactly these top-level keys:
+- "target_columns": array of strings (output columns in order)
+- "rename_map": object mapping dirty column names to target column names (use {{}} if none)
+- "value_normalisation": object describing allowed/standard values (e.g., gender, is_active)
+- "parsing_rules": object describing how to parse/clean numeric and percentage fields
+- "missing_value_policy": object describing how to represent missing/unparseable values (e.g., empty string)
+- "row_policy": object containing {{"drop_rows": false}}
+
+Additional constraints:
+- Do not invent columns not present in the CLEAN CSV.
+- If you are unsure about a rule, include it conservatively (prefer leaving values unchanged or empty).
+
+DIRTY_EXAMPLE_CSV:
+{DIRTY_CSV}
+
+CLEAN_EXAMPLE_CSV:
+{CLEAN_CSV}
+
+===APPLY_RULES===
+You are a data engineering pipeline.
+
+Clean the DIRTY CSV using the provided RULES.
+
+Strict requirements:
+- Output ONLY CSV.
+- Include header row.
+- Preserve row order.
+- Do not drop rows.
+- If value cannot be parsed, leave it empty.
+- Do not push values within the rows. Values originally found within a column should remain on their corresponding row and column.
+- Header must match RULES.target_columns exactly.
+
+If you cannot complete the task, still output a CSV with:
+- the header row
+- the same number of data rows as input, filled with empty cells
+
+RULES_JSON:
+{RULES_JSON}
+
+DIRTY_CSV:
+{DIRTY_CSV}
+
+
+===INFER_RULES_NOREF===
+You are a data engineering assistant.
+
+You are given a dirty CSV table. Infer a reasonable set of cleaning and standardisation rules that should be applied to transform it into a cleaner, more consistent table.
+
+Output format requirements (VERY IMPORTANT):
+- Return a SINGLE JSON object and NOTHING ELSE.
+- Use DOUBLE QUOTES for all keys and all string values.
+- Do NOT include markdown, code fences, comments, or trailing commas.
+
+Your JSON object MUST contain exactly these top-level keys:
+- "target_columns": array of strings (output columns in order)
+- "rename_map": object mapping dirty column names to cleaned column names (use {{}} if none)
+- "value_normalisation": object describing allowed/standard values
+- "parsing_rules": object describing how to parse/clean numeric, categorical, and percentage fields
+- "missing_value_policy": object describing how to represent missing/unparseable values
+- "row_policy": object containing {{"drop_rows": false}}
+
+Critical constraints:
+- Do NOT use null in "rename_map".
+- Every input column must appear in "rename_map".
+- If a column name does not need to change, map it to itself.
+- Do NOT exclude, remove, or ignore columns through "rename_map".
+- Do NOT drop columns unless explicitly required by the task.
+- Preserve all columns unless a transformation clearly requires renaming.
+- Preserve the same row count.
+- Do not invent entirely new information.
+- If uncertain, prefer conservative cleaning decisions.
+- Preserve the same method of dealing with missing values across all data.
+
+DIRTY_CSV:
+{DIRTY_CSV}

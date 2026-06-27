@@ -1,0 +1,21 @@
+﻿freelancer_ID,forename,surname,gender,age,country,language,primary_skill,years_of_experience,hourly_rate (USD),rating,is_active,client_satisfaction
+FL250414,Allison,Henderson,F,26,Egypt,Arabic,Web Development,2,20,1.3,N,0.83
+FL250415,Susan,Dixon,F,44,South Korea,Korean,Cybersecurity,22,30,4.1,Y,NULL
+FL250416,David,Morrison,M,42,Mexico,Spanish,Machine Learning,8,50,2.4,N,0.68
+FL250417,Jason,Carter,M,38,Mexico,Spanish,Data Analysis,9,50,0,N,0.74
+FL250418,James,Jacobs,M,51,Egypt,Arabic,Web Development,32,100,4.4,N,0.91
+FL250419,Kathleen,Quinn,F,36,France,French,Artificial Intelligence,8,100,2.2,Y,0.97
+FL250420,Natalie,Frank,F,37,Australia,English,Mobile Apps,10,30,0,N,0.96
+FL250421,Michael,Reed,M,31,South Africa,Afrikaans,DevOps,0,50,1.1,Y,0.73
+FL250422,Sheila,Smith,F,47,India,Hindi,Cybersecurity,22,NULL,1.4,Y,0.72
+FL250423,Morgan,Ford,F,60,Mexico,Spanish,UI/UX Design,34,100,0,Y,0.74
+FL250424,Linda,Schultz,F,48,Argentina,Spanish,Mobile Apps,5,30,1.5,N,NULL
+FL250425,Regina,Daniel,F,24,India,Hindi,Artificial Intelligence,3,20,0,Y,NULL
+FL250426,Allison,Perkins,F,35,Netherlands,Dutch,Machine Learning,10,75,0,NULL,0.74
+FL250427,Bradley,Weaver,M,35,United States,English,DevOps,NULL,100,3.5,Y,0.71
+FL250428,Sarah,Hall,F,29,Netherlands,Dutch,UI/UX Design,6,NULL,4.8,N,0.83
+FL250429,Diana,Walton,F,36,Italy,Italian,Machine Learning,1,75,NULL,NULL,0.63
+FL250430,Donna,Davis,F,44,Canada,English,Artificial Intelligence,0,NULL,4.8,NULL,0.84
+FL250431,Cristopher,Mcclain,M,44,South Africa,Afrikaans,Web Development,NULL,NULL,1.4,N,0.93
+FL250432,Paul,Williamson,M,40,India,Hindi,Artificial Intelligence,13,100,1.1,Y,NULL
+FL250433,Barbara,Brown,F,53,Netherlands,Dutch,Machine Learning,13,50,3.3,Y,0.93

@@ -1,0 +1,129 @@
+{
+  "target_columns": [
+    "freelancer_ID",
+    "name",
+    "gender",
+    "age",
+    "country",
+    "language",
+    "primary_skill",
+    "years_of_experience",
+    "hourly_rate_USD",
+    "rating",
+    "is_active",
+    "client_satisfaction"
+  ],
+  "rename_map": {
+    "freelancer_ID": "freelancer_ID",
+    "name": "name",
+    "gender": "gender",
+    "age": "age",
+    "country": "country",
+    "language": "language",
+    "primary_skill": "primary_skill",
+    "years_of_experience": "years_of_experience",
+    "hourly_rate (USD)": "hourly_rate_USD",
+    "rating": "rating",
+    "is_active": "is_active",
+    "client_satisfaction": "client_satisfaction"
+  },
+  "value_normalisation": {
+    "gender": {
+      "standard_values": [
+        "M",
+        "F"
+      ],
+      "mapping": {
+        "m": "M",
+        "M": "M",
+        "male": "M",
+        "Male": "M",
+        "MALE": "M",
+        "f": "F",
+        "F": "F",
+        "female": "F",
+        "Female": "F",
+        "FEMALE": "F"
+      }
+    },
+    "is_active": {
+      "standard_values": [
+        "Y",
+        "N"
+      ],
+      "mapping": {
+        "1": "Y",
+        "0": "N",
+        "Y": "Y",
+        "N": "N",
+        "yes": "Y",
+        "no": "N",
+        "TRUE": "Y",
+        "FALSE": "N",
+        "true": "Y",
+        "false": "N"
+      }
+    },
+    "primary_skill": {
+      "standard_values": [
+        "DevOps",
+        "Data Analysis",
+        "Blockchain Development",
+        "Web Development",
+        "AI",
+        "UI/UX Design",
+        "Cybersecurity",
+        "Machine Learning",
+        "Graphic Design",
+        "Mobile Apps"
+      ]
+    }
+  },
+  "parsing_rules": {
+    "age": {
+      "type": "integer",
+      "min": 18,
+      "max": 100,
+      "description": "Parse as integer, remove any non-numeric characters"
+    },
+    "years_of_experience": {
+      "type": "integer",
+      "min": 0,
+      "max": 70,
+      "description": "Parse as integer, remove any non-numeric characters"
+    },
+    "hourly_rate_USD": {
+      "type": "numeric",
+      "description": "Remove currency symbols ($, USD) and whitespace, parse as float"
+    },
+    "rating": {
+      "type": "numeric",
+      "min": 0,
+      "max": 5,
+      "description": "Parse as float with up to 1 decimal place"
+    },
+    "client_satisfaction": {
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "description": "Remove percentage symbol (%), parse as integer representing percentage"
+    },
+    "name": {
+      "type": "string",
+      "description": "Remove titles (Mr., Miss, Mrs., Ms., MD, DDS, III, etc.) and trim whitespace"
+    }
+  },
+  "missing_value_policy": {
+    "default_representation": "",
+    "age": "leave_empty",
+    "years_of_experience": "leave_empty",
+    "hourly_rate_USD": "leave_empty",
+    "rating": "leave_empty",
+    "is_active": "leave_empty",
+    "client_satisfaction": "leave_empty",
+    "description": "Represent missing/unparseable values as empty strings"
+  },
+  "row_policy": {
+    "drop_rows": false
+  }
+}

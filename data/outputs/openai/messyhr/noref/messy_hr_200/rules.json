@@ -1,0 +1,292 @@
+{
+  "target_columns": [
+    "Age",
+    "Salary",
+    "Gender",
+    "Department",
+    "Position",
+    "Joining Date",
+    "Performance Score",
+    "Employee Statement",
+    "Age_status",
+    "Salary_status",
+    "Gender_status",
+    "Department_status",
+    "Position_status",
+    "Joining Date_status",
+    "Performance Score_status",
+    "Employee Statement_status",
+    "Salary_validated",
+    "Gender_validated",
+    "Position_validated",
+    "Joining Date_validated",
+    "Performance Score_validated",
+    "Department_validated",
+    "Age_validated",
+    "Employee Statement_validated"
+  ],
+  "rename_map": {
+    "Age": "Age",
+    "Salary": "Salary",
+    "Gender": "Gender",
+    "Department": "Department",
+    "Position": "Position",
+    "Joining Date": "Joining Date",
+    "Performance Score": "Performance Score",
+    "Employee Statement": "Employee Statement",
+    "Age_status": "Age_status",
+    "Salary_status": "Salary_status",
+    "Gender_status": "Gender_status",
+    "Department_status": "Department_status",
+    "Position_status": "Position_status",
+    "Joining Date_status": "Joining Date_status",
+    "Performance Score_status": "Performance Score_status",
+    "Employee Statement_status": "Employee Statement_status",
+    "Salary_validated": "Salary_validated",
+    "Gender_validated": "Gender_validated",
+    "Position_validated": "Position_validated",
+    "Joining Date_validated": "Joining Date_validated",
+    "Performance Score_validated": "Performance Score_validated",
+    "Department_validated": "Department_validated",
+    "Age_validated": "Age_validated",
+    "Employee Statement_validated": "Employee Statement_validated"
+  },
+  "value_normalisation": {
+    "Age": {
+      "type": "integer",
+      "rules": [
+        "Convert textual numbers (e.g., 'thirty') to integers (e.g., 30)",
+        "Trim whitespace",
+        "Treat 'NAN', 'nan', empty strings, and non-numeric strings as missing"
+      ]
+    },
+    "Salary": {
+      "type": "integer",
+      "rules": [
+        "Convert textual numbers (e.g., 'SIXTY THOUSAND') to numeric (e.g., 60000)",
+        "Remove commas and currency symbols if present",
+        "Trim whitespace",
+        "Treat 'NAN', 'nan', 'Salary', empty strings, and non-numeric strings as missing"
+      ]
+    },
+    "Gender": {
+      "allowed_values": [
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "rules": [
+        "Trim whitespace",
+        "Capitalize first letter",
+        "Map common variants or misspellings to allowed values if any",
+        "Treat unknown or empty as missing"
+      ]
+    },
+    "Department": {
+      "allowed_values": [
+        "HR",
+        "IT",
+        "Sales",
+        "Marketing",
+        "Finance"
+      ],
+      "rules": [
+        "Trim whitespace",
+        "Capitalize first letter of each word",
+        "Treat unknown or empty as missing"
+      ]
+    },
+    "Position": {
+      "allowed_values": [
+        "Director",
+        "Assistant",
+        "Clerk",
+        "Manager",
+        "Analyst",
+        "HR",
+        "HR employee",
+        "Ms.",
+        "Administrator"
+      ],
+      "rules": [
+        "Trim whitespace",
+        "Capitalize first letter of each word",
+        "Treat unknown or empty as missing"
+      ]
+    },
+    "Joining Date": {
+      "type": "date",
+      "formats": [
+        "dd-MMM-yy",
+        "M/d/yyyy",
+        "yyyy.MM.dd",
+        "yyyy-MM-dd",
+        "Other common date formats"
+      ],
+      "rules": [
+        "Parse dates to ISO 8601 format (yyyy-MM-dd)",
+        "Treat 'Other', 'NAN', 'nan', empty strings, and unparseable as missing"
+      ]
+    },
+    "Performance Score": {
+      "allowed_values": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F"
+      ],
+      "rules": [
+        "Trim whitespace",
+        "Uppercase",
+        "Treat unknown or empty as missing"
+      ]
+    },
+    "Employee Statement": {
+      "type": "string",
+      "rules": [
+        "Trim leading and trailing whitespace",
+        "Preserve original text including punctuation"
+      ]
+    },
+    "Status and Validated columns": {
+      "type": "integer",
+      "rules": [
+        "Treat numeric values as is",
+        "Treat missing or non-numeric as missing"
+      ]
+    }
+  },
+  "parsing_rules": {
+    "numeric_fields": {
+      "Age": {
+        "convert_text_numbers": true,
+        "invalid_to_missing": true,
+        "strip_whitespace": true
+      },
+      "Salary": {
+        "convert_text_numbers": true,
+        "remove_commas": true,
+        "invalid_to_missing": true,
+        "strip_whitespace": true
+      },
+      "Status and Validated columns": {
+        "parse_as_integer": true,
+        "invalid_to_missing": true
+      }
+    },
+    "categorical_fields": {
+      "Gender": {
+        "standardize_case": "capitalize",
+        "allowed_values": [
+          "Male",
+          "Female",
+          "Other"
+        ],
+        "invalid_to_missing": true,
+        "strip_whitespace": true
+      },
+      "Department": {
+        "standardize_case": "title",
+        "allowed_values": [
+          "HR",
+          "IT",
+          "Sales",
+          "Marketing",
+          "Finance"
+        ],
+        "invalid_to_missing": true,
+        "strip_whitespace": true
+      },
+      "Position": {
+        "standardize_case": "title",
+        "allowed_values": [
+          "Director",
+          "Assistant",
+          "Clerk",
+          "Manager",
+          "Analyst",
+          "HR",
+          "HR Employee",
+          "Ms.",
+          "Administrator"
+        ],
+        "invalid_to_missing": true,
+        "strip_whitespace": true
+      },
+      "Performance Score": {
+        "standardize_case": "uppercase",
+        "allowed_values": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "F"
+        ],
+        "invalid_to_missing": true,
+        "strip_whitespace": true
+      }
+    },
+    "date_fields": {
+      "Joining Date": {
+        "parse_formats": [
+          "dd-MMM-yy",
+          "M/d/yyyy",
+          "yyyy.MM.dd",
+          "yyyy-MM-dd"
+        ],
+        "output_format": "yyyy-MM-dd",
+        "invalid_to_missing": true,
+        "strip_whitespace": true
+      }
+    },
+    "text_fields": {
+      "Employee Statement": {
+        "strip_whitespace": true,
+        "preserve_text": true
+      }
+    }
+  },
+  "missing_value_policy": {
+    "numeric": {
+      "missing_values": [
+        "",
+        "NAN",
+        "nan",
+        "Salary",
+        "Other",
+        "MA",
+        "Male, Sales, Director, 3/25/2019, D, I am developing stronger work habits, by paying closer attention to details, through regular collaboration."
+      ],
+      "represent_as": ""
+    },
+    "categorical": {
+      "missing_values": [
+        "",
+        "NAN",
+        "nan",
+        "Other",
+        "Male, Sales, Director, 3/25/2019, D, I am developing stronger work habits, by paying closer attention to details, through regular collaboration."
+      ],
+      "represent_as": ""
+    },
+    "date": {
+      "missing_values": [
+        "",
+        "NAN",
+        "nan",
+        "Other"
+      ],
+      "represent_as": ""
+    },
+    "text": {
+      "missing_values": [
+        ""
+      ],
+      "represent_as": ""
+    }
+  },
+  "row_policy": {
+    "drop_rows": false
+  }
+}

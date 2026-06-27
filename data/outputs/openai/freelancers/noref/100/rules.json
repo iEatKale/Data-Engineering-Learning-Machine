@@ -1,0 +1,156 @@
+{
+  "target_columns": [
+    "freelancer_ID",
+    "name",
+    "gender",
+    "age",
+    "country",
+    "language",
+    "primary_skill",
+    "years_of_experience",
+    "hourly_rate_usd",
+    "rating",
+    "is_active",
+    "client_satisfaction"
+  ],
+  "rename_map": {
+    "freelancer_ID": "freelancer_ID",
+    "name": "name",
+    "gender": "gender",
+    "age": "age",
+    "country": "country",
+    "language": "language",
+    "primary_skill": "primary_skill",
+    "years_of_experience": "years_of_experience",
+    "hourly_rate (USD)": "hourly_rate_usd",
+    "rating": "rating",
+    "is_active": "is_active",
+    "client_satisfaction": "client_satisfaction"
+  },
+  "value_normalisation": {
+    "gender": {
+      "male": "Male",
+      "m": "Male",
+      "MALE": "Male",
+      "female": "Female",
+      "f": "Female",
+      "FEMALE": "Female",
+      "F": "Female"
+    },
+    "is_active": {
+      "1": true,
+      "0": false,
+      "TRUE": true,
+      "FALSE": false,
+      "true": true,
+      "false": false,
+      "yes": true,
+      "no": false,
+      "Y": true,
+      "N": false,
+      "y": true,
+      "n": false
+    },
+    "client_satisfaction": {
+      "format": "percentage",
+      "allowed_range": [
+        0,
+        100
+      ]
+    },
+    "hourly_rate_usd": {
+      "currency": "USD",
+      "format": "numeric"
+    },
+    "rating": {
+      "allowed_range": [
+        0,
+        5
+      ]
+    }
+  },
+  "parsing_rules": {
+    "numeric_fields": [
+      "age",
+      "years_of_experience",
+      "hourly_rate_usd",
+      "rating"
+    ],
+    "categorical_fields": [
+      "gender",
+      "country",
+      "language",
+      "primary_skill",
+      "is_active"
+    ],
+    "percentage_fields": [
+      "client_satisfaction"
+    ],
+    "hourly_rate_usd": {
+      "strip_currency_symbols": [
+        "$",
+        "USD",
+        "usd"
+      ],
+      "convert_to_float": true,
+      "remove_whitespace": true
+    },
+    "gender": {
+      "case_insensitive": true,
+      "map_values": {
+        "f": "Female",
+        "female": "Female",
+        "FEMALE": "Female",
+        "F": "Female",
+        "m": "Male",
+        "male": "Male",
+        "MALE": "Male"
+      }
+    },
+    "is_active": {
+      "case_insensitive": true,
+      "map_values": {
+        "1": true,
+        "0": false,
+        "true": true,
+        "false": false,
+        "yes": true,
+        "no": false,
+        "y": true,
+        "n": false
+      }
+    },
+    "client_satisfaction": {
+      "strip_percentage_sign": true,
+      "convert_to_float": true,
+      "divide_by_100": true
+    }
+  },
+  "missing_value_policy": {
+    "numeric_fields": {
+      "age": -1,
+      "years_of_experience": -1,
+      "hourly_rate_usd": -1,
+      "rating": -1
+    },
+    "categorical_fields": {
+      "gender": "Unknown",
+      "country": "Unknown",
+      "language": "Unknown",
+      "primary_skill": "Unknown",
+      "is_active": false
+    },
+    "percentage_fields": {
+      "client_satisfaction": -1
+    },
+    "general": {
+      "empty_string": "",
+      "unparseable_numeric": -1,
+      "unparseable_percentage": -1,
+      "unparseable_categorical": "Unknown"
+    }
+  },
+  "row_policy": {
+    "drop_rows": false
+  }
+}

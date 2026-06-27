@@ -1,0 +1,101 @@
+{
+  "target_columns": [
+    "freelancer_ID",
+    "name",
+    "gender",
+    "age",
+    "country",
+    "language",
+    "primary_skill",
+    "years_of_experience",
+    "hourly_rate_usd",
+    "rating",
+    "is_active",
+    "client_satisfaction"
+  ],
+  "rename_map": {
+    "freelancer_ID": "freelancer_ID",
+    "name": "name",
+    "gender": "gender",
+    "age": "age",
+    "country": "country",
+    "language": "language",
+    "primary_skill": "primary_skill",
+    "years_of_experience": "years_of_experience",
+    "hourly_rate (USD)": "hourly_rate_usd",
+    "rating": "rating",
+    "is_active": "is_active",
+    "client_satisfaction": "client_satisfaction"
+  },
+  "value_normalisation": {
+    "gender": {
+      "m": "Male",
+      "male": "Male",
+      "MALE": "Male",
+      "M": "Male",
+      "f": "Female",
+      "female": "Female",
+      "FEMALE": "Female",
+      "F": "Female",
+      "Female": "Female",
+      "Male": "Male"
+    },
+    "is_active": {
+      "": "Unknown",
+      "0": "No",
+      "1": "Yes",
+      "N": "No",
+      "Y": "Yes",
+      "no": "No",
+      "yes": "Yes",
+      "TRUE": "Yes",
+      "FALSE": "No",
+      "true": "Yes",
+      "false": "No",
+      "Yes": "Yes",
+      "No": "No",
+      "Unknown": "Unknown"
+    },
+    "client_satisfaction": {
+      "allow_percentage": true,
+      "allow_numeric": true
+    }
+  },
+  "parsing_rules": {
+    "hourly_rate_usd": {
+      "remove_currency_symbols": [
+        "$",
+        "USD",
+        "usd",
+        "Usd"
+      ],
+      "convert_to_float": true,
+      "strip_whitespace": true
+    },
+    "rating": {
+      "convert_to_float": true,
+      "treat_zero_as_valid": true
+    },
+    "client_satisfaction": {
+      "strip_percentage_sign": true,
+      "convert_to_float": true,
+      "scale_percentage_to_0_100": true
+    },
+    "age": {
+      "convert_to_integer": true
+    },
+    "years_of_experience": {
+      "convert_to_integer": true,
+      "empty_to_missing": true
+    }
+  },
+  "missing_value_policy": {
+    "numeric": "NaN",
+    "categorical": "Unknown",
+    "boolean": "Unknown",
+    "client_satisfaction": "NaN"
+  },
+  "row_policy": {
+    "drop_rows": false
+  }
+}

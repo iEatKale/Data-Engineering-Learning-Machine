@@ -1,0 +1,152 @@
+{
+  "target_columns": [
+    "Age",
+    "Salary",
+    "Gender",
+    "Department",
+    "Position",
+    "Joining Date",
+    "Performance Score",
+    "Employee Statement"
+  ],
+  "rename_map": {
+    "Age": "Age",
+    "Salary": "Salary",
+    "Gender": "Gender",
+    "Department": "Department",
+    "Position": "Position",
+    "Joining Date": "Joining Date",
+    "Performance Score": "Performance Score",
+    "Employee Statement": "Employee Statement",
+    "Age_status": "Age_status",
+    "Salary_status": "Salary_status",
+    "Gender_status": "Gender_status",
+    "Department_status": "Department_status",
+    "Position_status": "Position_status",
+    "Joining Date_status": "Joining Date_status",
+    "Performance Score_status": "Performance Score_status",
+    "Employee Statement_status": "Employee Statement_status",
+    "Salary_validated": "Salary_validated",
+    "Gender_validated": "Gender_validated",
+    "Position_validated": "Position_validated",
+    "Joining Date_validated": "Joining Date_validated",
+    "Performance Score_validated": "Performance Score_validated",
+    "Department_validated": "Department_validated",
+    "Age_validated": "Age_validated",
+    "Employee Statement_validated": "Employee Statement_validated"
+  },
+  "value_normalisation": {
+    "Gender": {
+      "standard_values": [
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "mapping": {
+        "Male": "Male",
+        "Female": "Female",
+        "Other": "Other"
+      }
+    },
+    "Department": {
+      "standard_values": [
+        "HR",
+        "Finance",
+        "Sales",
+        "IT",
+        "Marketing"
+      ],
+      "mapping": {}
+    },
+    "Position": {
+      "standard_values": [
+        "Manager",
+        "Director",
+        "Analyst",
+        "Assistant",
+        "Clerk"
+      ],
+      "mapping": {
+        "Mr.": "Manager"
+      }
+    },
+    "Performance Score": {
+      "standard_values": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F"
+      ],
+      "mapping": {}
+    }
+  },
+  "parsing_rules": {
+    "Age": {
+      "type": "integer",
+      "min": 18,
+      "max": 75,
+      "text_to_number": {
+        "thirty": 30
+      }
+    },
+    "Salary": {
+      "type": "integer",
+      "min": 30000,
+      "max": 200000,
+      "text_to_number": {
+        "SIXTY THOUSAND": 60000
+      },
+      "invalid_patterns": [
+        "NAN",
+        " NAN "
+      ]
+    },
+    "Joining Date": {
+      "type": "date",
+      "accepted_formats": [
+        "DD-MMM-YY",
+        "M/D/YYYY",
+        "YYYY.MM.DD"
+      ],
+      "standardise_to": "YYYY-MM-DD"
+    },
+    "Performance Score": {
+      "type": "categorical",
+      "valid_values": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F"
+      ]
+    },
+    "Employee Statement": {
+      "type": "text",
+      "min_length": 10,
+      "invalid_patterns": [
+        "MA",
+        "Mr.",
+        "Female",
+        "Male",
+        "salary",
+        "joining date",
+        "performance"
+      ]
+    }
+  },
+  "missing_value_policy": {
+    "Age": "empty_string",
+    "Salary": "empty_string",
+    "Gender": "empty_string",
+    "Department": "empty_string",
+    "Position": "empty_string",
+    "Joining Date": "empty_string",
+    "Performance Score": "empty_string",
+    "Employee Statement": "empty_string",
+    "representation": ""
+  },
+  "row_policy": {
+    "drop_rows": false
+  }
+}

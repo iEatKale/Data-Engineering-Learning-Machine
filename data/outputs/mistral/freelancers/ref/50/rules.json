@@ -1,0 +1,140 @@
+{
+  "target_columns": [
+    "freelancer_ID",
+    "forename",
+    "surname",
+    "gender",
+    "age",
+    "country",
+    "language",
+    "primary_skill",
+    "years_of_experience",
+    "hourly_rate (USD)",
+    "rating",
+    "is_active",
+    "client_satisfaction"
+  ],
+  "rename_map": {
+    "name": "forename,surname",
+    "primary_skill": "primary_skill",
+    "is_active": "is_active",
+    "client_satisfaction": "client_satisfaction"
+  },
+  "value_normalisation": {
+    "gender": {
+      "allowed_values": [
+        "M",
+        "F",
+        "MALE",
+        "FEMALE",
+        "male",
+        "female",
+        "m",
+        "f",
+        "Male",
+        "Female"
+      ],
+      "standard_values": {
+        "M": "M",
+        "F": "F",
+        "MALE": "M",
+        "FEMALE": "F",
+        "male": "M",
+        "female": "F",
+        "m": "M",
+        "f": "F",
+        "Male": "M",
+        "Female": "F"
+      }
+    },
+    "is_active": {
+      "allowed_values": [
+        "Y",
+        "N",
+        "yes",
+        "no",
+        "YES",
+        "NO",
+        "TRUE",
+        "FALSE",
+        "True",
+        "False"
+      ],
+      "standard_values": {
+        "Y": "Y",
+        "N": "N",
+        "yes": "Y",
+        "no": "N",
+        "YES": "Y",
+        "NO": "N",
+        "TRUE": "Y",
+        "FALSE": "N",
+        "True": "Y",
+        "False": "N"
+      }
+    },
+    "primary_skill": {
+      "allowed_values": [
+        "Web Development",
+        "Cybersecurity",
+        "Machine Learning",
+        "Data Analysis",
+        "AI",
+        "Artificial Intelligence",
+        "Mobile Apps",
+        "DevOps",
+        "UI/UX Design"
+      ]
+    },
+    "client_satisfaction": {
+      "allowed_values": [
+        "NULL",
+        "0.63",
+        "0.68",
+        "0.71",
+        "0.72",
+        "0.73",
+        "0.74",
+        "0.83",
+        "0.84",
+        "0.91",
+        "0.93",
+        "0.96",
+        "0.97"
+      ]
+    }
+  },
+  "parsing_rules": {
+    "age": {
+      "type": "integer",
+      "missing_value": "NULL"
+    },
+    "years_of_experience": {
+      "type": "integer",
+      "missing_value": "NULL"
+    },
+    "hourly_rate (USD)": {
+      "type": "float",
+      "remove_currency": true,
+      "remove_symbols": true,
+      "missing_value": "NULL"
+    },
+    "rating": {
+      "type": "float",
+      "missing_value": "NULL"
+    },
+    "client_satisfaction": {
+      "type": "float",
+      "remove_percentage": true,
+      "missing_value": "NULL"
+    }
+  },
+  "missing_value_policy": {
+    "empty_string": "NULL",
+    "unparseable_numeric": "NULL",
+    "unparseable_boolean": "NULL"
+  },
+  "row_policy": {
+    "drop_rows": false
+  }
+}

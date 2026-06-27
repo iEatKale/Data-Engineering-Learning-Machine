@@ -1,0 +1,275 @@
+{
+  "target_columns": [
+    "employee_id",
+    "age",
+    "salary",
+    "gender",
+    "department",
+    "position",
+    "joining_date",
+    "performance_score",
+    "employee_statement",
+    "age_status",
+    "salary_status",
+    "gender_status",
+    "department_status",
+    "position_status",
+    "joining_date_status",
+    "performance_score_status",
+    "employee_statement_status",
+    "salary_validated",
+    "gender_validated",
+    "position_validated",
+    "joining_date_validated",
+    "performance_score_validated",
+    "department_validated",
+    "age_validated"
+  ],
+  "rename_map": {
+    "Age": "age",
+    "Salary": "salary",
+    "Gender": "gender",
+    "Department": "department",
+    "Position": "position",
+    "Joining Date": "joining_date",
+    "Performance Score": "performance_score",
+    "Employee Statement": "employee_statement",
+    "Age_status": "age_status",
+    "Salary_status": "salary_status",
+    "Gender_status": "gender_status",
+    "Department_status": "department_status",
+    "Position_status": "position_status",
+    "Joining Date_status": "joining_date_status",
+    "Performance Score_status": "performance_score_status",
+    "Employee Statement_status": "employee_statement_status",
+    "Salary_validated": "salary_validated",
+    "Gender_validated": "gender_validated",
+    "Position_validated": "position_validated",
+    "Joining Date_validated": "joining_date_validated",
+    "Performance Score_validated": "performance_score_validated",
+    "Department_validated": "department_validated",
+    "Age_validated": "age_validated"
+  },
+  "value_normalisation": {
+    "gender": {
+      "allowed_values": [
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "standard_values": {
+        "F": "Female",
+        "M": "Male",
+        "m": "Male",
+        "f": "Female"
+      }
+    },
+    "department": {
+      "allowed_values": [
+        "HR",
+        "Finance",
+        "Marketing",
+        "IT",
+        "Sales"
+      ]
+    },
+    "position": {
+      "allowed_values": [
+        "Director",
+        "Manager",
+        "Analyst",
+        "Clerk",
+        "Assistant"
+      ]
+    },
+    "performance_score": {
+      "allowed_values": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "standard_values": {
+        "6": "A",
+        "5": "B",
+        "4": "C",
+        "3": "D",
+        "2": "E",
+        "1": "F",
+        "0": "F"
+      }
+    },
+    "employee_statement": {
+      "standard_values": {
+        "MA": "I find my daily tasks engaging, as I learned to handle feedback constructively"
+      }
+    },
+    "age_status": {
+      "allowed_values": [
+        "0",
+        "6"
+      ]
+    },
+    "salary_status": {
+      "allowed_values": [
+        "0",
+        "6"
+      ]
+    },
+    "gender_status": {
+      "allowed_values": [
+        "0",
+        "6"
+      ]
+    },
+    "department_status": {
+      "allowed_values": [
+        "0",
+        "6"
+      ]
+    },
+    "position_status": {
+      "allowed_values": [
+        "0",
+        "6"
+      ]
+    },
+    "joining_date_status": {
+      "allowed_values": [
+        "0",
+        "6"
+      ]
+    },
+    "performance_score_status": {
+      "allowed_values": [
+        "0",
+        "6"
+      ]
+    },
+    "employee_statement_status": {
+      "allowed_values": [
+        "0",
+        "6"
+      ]
+    },
+    "salary_validated": {
+      "allowed_values": [
+        "0",
+        "1"
+      ]
+    },
+    "gender_validated": {
+      "allowed_values": [
+        "0",
+        "1"
+      ]
+    },
+    "position_validated": {
+      "allowed_values": [
+        "0",
+        "1"
+      ]
+    },
+    "joining_date_validated": {
+      "allowed_values": [
+        "0",
+        "1"
+      ]
+    },
+    "performance_score_validated": {
+      "allowed_values": [
+        "0",
+        "1"
+      ]
+    },
+    "department_validated": {
+      "allowed_values": [
+        "0",
+        "1"
+      ]
+    },
+    "age_validated": {
+      "allowed_values": [
+        "0",
+        "1"
+      ]
+    }
+  },
+  "parsing_rules": {
+    "age": {
+      "type": "numeric",
+      "conversion": {
+        "rule": "replace('thirty', 30)",
+        "fallback": "NA"
+      }
+    },
+    "salary": {
+      "type": "numeric",
+      "conversion": {
+        "rule": "replace('SIXTY THOUSAND', 60000)",
+        "fallback": "NA"
+      },
+      "unit": "USD"
+    },
+    "joining_date": {
+      "type": "date",
+      "conversion": {
+        "rule": "parse_date_with_format([format1, format2, format3])",
+        "formats": [
+          "MMM-d-yy",
+          "yyyy.MM.dd",
+          "MM/dd/yyyy",
+          "dd/MM/yyyy"
+        ],
+        "fallback": "NA"
+      }
+    },
+    "performance_score": {
+      "type": "categorical",
+      "conversion": {
+        "rule": "map_to_standard_value(standard_values)"
+      }
+    },
+    "employee_statement": {
+      "type": "text",
+      "conversion": {
+        "rule": "trim_and_lowercase",
+        "fallback": "NA"
+      }
+    }
+  },
+  "missing_value_policy": {
+    "strategy": "impute_with_placeholder",
+    "placeholder": {
+      "age": "NA",
+      "salary": "NA",
+      "joining_date": "NA",
+      "performance_score": "NA",
+      "employee_statement": "NA",
+      "gender": "Unknown",
+      "department": "Unknown",
+      "position": "Unknown",
+      "age_status": "NA",
+      "salary_status": "NA",
+      "gender_status": "NA",
+      "department_status": "NA",
+      "position_status": "NA",
+      "joining_date_status": "NA",
+      "performance_score_status": "NA",
+      "employee_statement_status": "NA",
+      "salary_validated": "NA",
+      "gender_validated": "NA",
+      "position_validated": "NA",
+      "joining_date_validated": "NA",
+      "performance_score_validated": "NA",
+      "department_validated": "NA",
+      "age_validated": "NA"
+    },
+    "drop_rows": false
+  },
+  "row_policy": {
+    "drop_rows": false
+  }
+}

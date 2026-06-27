@@ -1,0 +1,160 @@
+{
+  "target_columns": [
+    "freelancer_id",
+    "name",
+    "gender",
+    "age",
+    "country",
+    "language",
+    "primary_skill",
+    "years_of_experience",
+    "hourly_rate_usd",
+    "rating",
+    "is_active",
+    "client_satisfaction_percentage"
+  ],
+  "rename_map": {
+    "freelancer_ID": "freelancer_id",
+    "name": "name",
+    "gender": "gender",
+    "age": "age",
+    "country": "country",
+    "language": "language",
+    "primary_skill": "primary_skill",
+    "years_of_experience": "years_of_experience",
+    "hourly_rate (USD)": "hourly_rate_usd",
+    "rating": "rating",
+    "is_active": "is_active",
+    "client_satisfaction": "client_satisfaction_percentage"
+  },
+  "value_normalisation": {
+    "gender": {
+      "allowed_values": [
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "standardisation": {
+        "m": "Male",
+        "f": "Female",
+        "male": "Male",
+        "female": "Female",
+        "MALE": "Male",
+        "FEMALE": "Female",
+        "F": "Female",
+        "M": "Male"
+      }
+    },
+    "country": {
+      "standardisation": {
+        "United States": "United States of America",
+        "South Korea": "Republic of Korea"
+      }
+    },
+    "primary_skill": {
+      "standardisation": {
+        "DevOps": "DevOps Engineering",
+        "Data Analysis": "Data Analysis & Visualization",
+        "UI/UX Design": "UI/UX Design",
+        "Blockchain Development": "Blockchain Development",
+        "Web Development": "Web Development",
+        "AI": "Artificial Intelligence",
+        "Machine Learning": "Machine Learning",
+        "Cybersecurity": "Cybersecurity",
+        "Graphic Design": "Graphic Design",
+        "Mobile Apps": "Mobile Application Development"
+      }
+    },
+    "is_active": {
+      "allowed_values": [
+        "Yes",
+        "No",
+        "TRUE",
+        "FALSE",
+        "Y",
+        "N"
+      ],
+      "standardisation": {
+        "TRUE": "Yes",
+        "FALSE": "No",
+        "Y": "Yes",
+        "N": "No",
+        "yes": "Yes",
+        "no": "No"
+      }
+    },
+    "client_satisfaction_percentage": {
+      "standardisation": {
+        "97%": 97,
+        "75%": 75,
+        "78%": 78,
+        "65%": 65,
+        "70": 70,
+        "86%": 86,
+        "64%": 64,
+        "92%": 92,
+        "61%": 61,
+        "73%": 73,
+        "67%": 67,
+        "69%": 69,
+        "82%": 82,
+        "68%": 68,
+        "76%": 76,
+        "90%": 90,
+        "81%": 81,
+        "79%": 79,
+        "89%": 89,
+        "95%": 95
+      }
+    }
+  },
+  "parsing_rules": {
+    "age": {
+      "type": "integer",
+      "missing_value": "null"
+    },
+    "years_of_experience": {
+      "type": "float",
+      "missing_value": "null"
+    },
+    "hourly_rate_usd": {
+      "type": "float",
+      "parse_rules": {
+        "remove_currency": true,
+        "remove_symbols": true,
+        "remove_spaces": true,
+        "default_currency": "USD"
+      },
+      "missing_value": "null"
+    },
+    "rating": {
+      "type": "float",
+      "missing_value": "null"
+    },
+    "client_satisfaction_percentage": {
+      "type": "integer",
+      "parse_rules": {
+        "remove_percentage_sign": true,
+        "convert_to_integer": true
+      },
+      "missing_value": "null"
+    }
+  },
+  "missing_value_policy": {
+    "strategy": "preserve_as_null",
+    "exceptions": {
+      "age": {
+        "policy": "impute_with_median"
+      },
+      "years_of_experience": {
+        "policy": "impute_with_median"
+      },
+      "rating": {
+        "policy": "impute_with_median"
+      }
+    }
+  },
+  "row_policy": {
+    "drop_rows": false
+  }
+}

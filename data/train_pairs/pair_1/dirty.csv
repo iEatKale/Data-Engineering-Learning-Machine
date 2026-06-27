@@ -1,0 +1,21 @@
+﻿freelancer_ID,name,gender,age,country,language,primary_skill,years_of_experience,hourly_rate (USD),rating,is_active,client_satisfaction
+FL250414,Allison Henderson,F,26,Egypt,Arabic,Web Development,2,20,1.3,no,83%
+FL250415,Ms. Susan Dixon,FEMALE,44,South Korea,Korean,Cybersecurity,22,30,4.1,Y,
+FL250416,David Morrison,male,42,Mexico,Spanish,Machine Learning,8,$50,2.4,no,68%
+FL250417,Jason Carter,M,38,Mexico,Spanish,Data Analysis,9,$50,0,0,74%
+FL250418,Mr. James Jacobs,male,51,Egypt,Arabic,Web Development,32,100,4.4,FALSE,91
+FL250419,Kathleen Quinn,female,36,France,French,AI,8,USD 100,2.2,1,97%
+FL250420,Ms. Natalie Frank MD,FEMALE,37,Australia,English,Mobile Apps,10,30,0,0,96%
+FL250421,Michael Reed,male,31,South Africa,Afrikaans,DevOps,0,50,1.1,Y,73%
+FL250422,Sheila Smith,f,47,India,Hindi,Cybersecurity,22,,1.4,yes,72%
+FL250423,Morgan Ford,female,60,Mexico,Spanish,UI/UX Design,34,$100,0,TRUE,74%
+FL250424,Ms. Linda Schultz,FEMALE,48,Argentina,Spanish,Mobile Apps,5,30,1.5,N,
+FL250425,Regina Daniel,F,24,India,Hindi,AI,3,20,0,1,
+FL250426,Allison Perkins,FEMALE,35,Netherlands,Dutch,Machine Learning,10,75,0,,74%
+FL250427,Bradley Weaver,MALE,35,United States,English,DevOps,,100,3.5,Y,71%
+FL250428,Sarah Hall,Female,29,Netherlands,Dutch,UI/UX Design,6,,4.8,N,83%
+FL250429,Diana Walton,Female,36,Italy,Italian,Machine Learning,1,$75,,,63%
+FL250430,Donna Davis,FEMALE,44,Canada,English,AI,0,,4.8,,84%
+FL250431,Christopher Mcclain,MALE,44,South Africa,Afrikaans,Web Development,,,1.4,0,93%
+FL250432,Dr. Paul Williamson,m,40,India,Hindi,AI,13,USD 100,1.1,1,
+FL250433,Barbara Brown,F,53,Netherlands,Dutch,Machine Learning,13,$50,3.3,Y,93%

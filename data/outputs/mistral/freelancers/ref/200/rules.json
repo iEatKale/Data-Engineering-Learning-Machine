@@ -1,0 +1,158 @@
+{
+  "target_columns": [
+    "freelancer_ID",
+    "forename",
+    "surname",
+    "gender",
+    "age",
+    "country",
+    "language",
+    "primary_skill",
+    "years_of_experience",
+    "hourly_rate (USD)",
+    "rating",
+    "is_active",
+    "client_satisfaction"
+  ],
+  "rename_map": {
+    "name": "forename,surname",
+    "primary_skill": "primary_skill",
+    "is_active": "is_active",
+    "client_satisfaction": "client_satisfaction"
+  },
+  "value_normalisation": {
+    "gender": {
+      "allowed_values": [
+        "M",
+        "F",
+        "MALE",
+        "FEMALE",
+        "male",
+        "female",
+        "m",
+        "f",
+        "Male",
+        "Female"
+      ],
+      "standard_values": {
+        "M": "M",
+        "F": "F",
+        "MALE": "M",
+        "FEMALE": "F",
+        "male": "M",
+        "female": "F",
+        "m": "M",
+        "f": "F",
+        "Male": "M",
+        "Female": "F"
+      }
+    },
+    "is_active": {
+      "allowed_values": [
+        "Y",
+        "N",
+        "yes",
+        "no",
+        "YES",
+        "NO",
+        "TRUE",
+        "FALSE",
+        "True",
+        "False"
+      ],
+      "standard_values": {
+        "Y": "Y",
+        "N": "N",
+        "yes": "Y",
+        "no": "N",
+        "YES": "Y",
+        "NO": "N",
+        "TRUE": "Y",
+        "FALSE": "N",
+        "True": "Y",
+        "False": "N"
+      }
+    },
+    "primary_skill": {
+      "allowed_values": [
+        "Web Development",
+        "Cybersecurity",
+        "Machine Learning",
+        "Data Analysis",
+        "Mobile Apps",
+        "DevOps",
+        "UI/UX Design",
+        "Artificial Intelligence",
+        "AI"
+      ],
+      "standard_values": {
+        "AI": "Artificial Intelligence"
+      }
+    },
+    "country": {
+      "allowed_values": [
+        "Egypt",
+        "South Korea",
+        "Mexico",
+        "France",
+        "Australia",
+        "South Africa",
+        "India",
+        "Argentina",
+        "Netherlands",
+        "United States",
+        "Italy",
+        "Canada"
+      ]
+    },
+    "language": {
+      "allowed_values": [
+        "Arabic",
+        "Korean",
+        "Spanish",
+        "French",
+        "English",
+        "Afrikaans",
+        "Hindi",
+        "Dutch",
+        "Irish",
+        "Italian"
+      ]
+    }
+  },
+  "parsing_rules": {
+    "age": {
+      "type": "integer",
+      "missing_value": null
+    },
+    "years_of_experience": {
+      "type": "integer",
+      "missing_value": null
+    },
+    "hourly_rate (USD)": {
+      "type": "float",
+      "remove_currency": true,
+      "remove_symbols": true,
+      "missing_value": null
+    },
+    "rating": {
+      "type": "float",
+      "remove_percentage": true,
+      "missing_value": null
+    },
+    "client_satisfaction": {
+      "type": "float",
+      "remove_percentage": true,
+      "missing_value": null
+    }
+  },
+  "missing_value_policy": {
+    "empty_string": "",
+    "null_value": "NULL",
+    "unparseable_numeric": null,
+    "unparseable_boolean": "NULL"
+  },
+  "row_policy": {
+    "drop_rows": false
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "target_columns": [
+    "freelancer_id",
+    "name",
+    "gender",
+    "age",
+    "country",
+    "language",
+    "primary_skill",
+    "years_of_experience",
+    "hourly_rate_usd",
+    "rating",
+    "is_active",
+    "client_satisfaction_percentage"
+  ],
+  "rename_map": {
+    "freelancer_ID": "freelancer_id",
+    "name": "name",
+    "gender": "gender",
+    "age": "age",
+    "country": "country",
+    "language": "language",
+    "primary_skill": "primary_skill",
+    "years_of_experience": "years_of_experience",
+    "hourly_rate (USD)": "hourly_rate_usd",
+    "rating": "rating",
+    "is_active": "is_active",
+    "client_satisfaction": "client_satisfaction_percentage"
+  },
+  "value_normalisation": {
+    "gender": {
+      "allowed_values": [
+        "male",
+        "female",
+        "unknown"
+      ],
+      "mapping": {
+        "f": "female",
+        "m": "male",
+        "F": "female",
+        "M": "male",
+        "FEMALE": "female",
+        "MALE": "male",
+        "Female": "female",
+        "Male": "male",
+        "male,": "male",
+        "female,": "female",
+        "": "unknown"
+      }
+    },
+    "country": {
+      "allowed_values": [
+        "Italy",
+        "Australia",
+        "Germany",
+        "Netherlands",
+        "Indonesia",
+        "United States",
+        "United Kingdom",
+        "Argentina",
+        "South Korea",
+        "Japan",
+        "Spain",
+        "France",
+        "Turkey",
+        "Canada",
+        "Egypt",
+        "South Africa",
+        "China",
+        "Russia",
+        "Brazil",
+        "Mexico",
+        "Afrikaans",
+        "Mandarin",
+        "Arabic",
+        "Portuguese",
+        "Hindi",
+        "Dutch",
+        "English",
+        "German",
+        "Italian",
+        "Spanish",
+        "Russian",
+        "French"
+      ],
+      "mapping": {
+        "": "unknown"
+      }
+    },
+    "language": {
+      "allowed_values": [
+        "Italian",
+        "English",
+        "German",
+        "Dutch",
+        "Indonesian",
+        "Spanish",
+        "Korean",
+        "Japanese",
+        "French",
+        "Turkish",
+        "Afrikaans",
+        "Mandarin",
+        "Arabic",
+        "Portuguese",
+        "Hindi",
+        "Russian"
+      ],
+      "mapping": {
+        "": "unknown"
+      }
+    },
+    "primary_skill": {
+      "allowed_values": [
+        "Blockchain Development",
+        "Mobile Apps",
+        "Graphic Design",
+        "Web Development",
+        "AI",
+        "Data Analysis",
+        "UI/UX Design",
+        "Cybersecurity",
+        "Machine Learning",
+        "DevOps"
+      ],
+      "mapping": {
+        "": "unknown"
+      }
+    },
+    "is_active": {
+      "allowed_values": [
+        "true",
+        "false",
+        "unknown"
+      ],
+      "mapping": {
+        "1": "true",
+        "0": "false",
+        "yes": "true",
+        "no": "false",
+        "Y": "true",
+        "N": "false",
+        "TRUE": "true",
+        "FALSE": "false",
+        "": "unknown"
+      }
+    },
+    "client_satisfaction_percentage": {
+      "allowed_values": [
+        "unknown"
+      ],
+      "regex_pattern": "^([0-9]{1,2})?%?$",
+      "mapping": {
+        "": "unknown"
+      }
+    }
+  },
+  "parsing_rules": {
+    "numeric_fields": {
+      "age": {
+        "type": "integer",
+        "min": 0,
+        "max": 120,
+        "default": -1
+      },
+      "years_of_experience": {
+        "type": "integer",
+        "min": 0,
+        "max": 100,
+        "default": -1
+      },
+      "hourly_rate_usd": {
+        "type": "float",
+        "min": 0,
+        "regex_pattern": "^(USD )?([0-9]+(\\.[0-9]{1,2})?|[0-9]+)$",
+        "default": -1
+      },
+      "rating": {
+        "type": "float",
+        "min": 0,
+        "max": 5,
+        "default": -1
+      }
+    },
+    "categorical_fields": {
+      "primary_skill": {
+        "default": "unknown"
+      }
+    },
+    "percentage_fields": {
+      "client_satisfaction_percentage": {
+        "type": "float",
+        "min": 0,
+        "max": 100,
+        "regex_pattern": "^([0-9]{1,2})?%?$",
+        "default": -1,
+        "conversion": {
+          "regex": "^([0-9]+)%$",
+          "replacement": "$1"
+        }
+      }
+    }
+  },
+  "missing_value_policy": {
+    "numeric_fields": {
+      "default_value": -1,
+      "indicator_column": "is_missing_numeric"
+    },
+    "categorical_fields": {
+      "default_value": "unknown",
+      "indicator_column": "is_missing_categorical"
+    },
+    "boolean_fields": {
+      "default_value": "unknown",
+      "indicator_column": "is_missing_boolean"
+    },
+    "string_fields": {
+      "default_value": "unknown",
+      "indicator_column": "is_missing_string"
+    }
+  },
+  "row_policy": {
+    "drop_rows": false
+  }
+}

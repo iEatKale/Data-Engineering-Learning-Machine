@@ -1,0 +1,99 @@
+freelancer_ID,name,gender,age,country,language,primary_skill,years_of_experience,hourly_rate_usd,rating,is_active,client_satisfaction
+FL250001,Nicole Kidd,Female,52,Italy,Italian,Blockchain Development,11,100.0,-1,False,-1
+FL250002,Vanessa Garcia,Female,52,Australia,English,Mobile Apps,34,100.0,3.3,True,0.84
+FL250003,Juan Nelson,Male,53,Germany,German,Graphic Design,31,50.0,0.0,False,0.71
+FL250004,Amanda Spencer,Female,38,Australia,English,Web Development,4,40.0,1.5,False,0.9
+FL250005,Lynn Curtis DDS,Female,53,Germany,German,Web Development,27,30.0,4.8,False,0.83
+FL250006,Lisa Johnson,Female,59,Netherlands,Dutch,AI,14,30.0,2.4,False,-1
+FL250007,Eric Myers,Male,52,Indonesia,Indonesian,Data Analysis,10,75.0,3.1,False,0.94
+FL250008,Ricky Graham,Male,43,Italy,Italian,Blockchain Development,14,40.0,4.6,False,0.94
+FL250009,Sean Martin,Male,26,United States,English,Blockchain Development,4,-1.0,4.0,True,0.76
+FL250010,Matthew Lloyd,Male,52,Turkey,Turkish,AI,22,50.0,-1,True,-1
+FL250011,Gavin Randall,Male,40,United Kingdom,English,Data Analysis,17,40.0,3.6,True,0.77
+FL250012,Michelle Curtis,Female,55,Argentina,Spanish,UI/UX Design,15,-1.0,-1,True,0.86
+FL250013,Alice Schneider,Female,57,United Kingdom,English,Cybersecurity,18,-1.0,2.0,False,0.86
+FL250014,Phillip Shelton,Male,38,Argentina,Spanish,Graphic Design,20,75.0,2.9,True,0.93
+FL250015,Edward Ferguson,Male,50,Germany,German,Data Analysis,22,75.0,3.7,True,0.7
+FL250016,Wyatt Stout,Male,42,Japan,Japanese,Data Analysis,0,30.0,1.2,False,0.69
+FL250017,Laura Johnson,Female,39,Australia,English,DevOps,13,30.0,2.5,False,0.6
+FL250018,Scott Burns,Male,56,India,Hindi,Blockchain Development,-1,-1.0,-1,False,0.87
+FL250019,Tyler Aguirre,Male,56,United States,English,UI/UX Design,31,50.0,1.1,False,0.75
+FL250020,Matthew Lawson,Male,57,Italy,Italian,Web Development,3,100.0,1.8,True,0.68
+FL250021,James Cherry,Male,-1,Indonesia,Indonesian,AI,9,50.0,1.8,False,0.65
+FL250022,Samuel Sanford,Male,51,Japan,Japanese,DevOps,-1,-1.0,2.4,False,0.69
+FL250023,Cesar Greene,Male,51,Brazil,Portuguese,Cybersecurity,21,30.0,4.7,False,-1
+FL250024,Melanie Carter,Female,51,South Korea,Korean,Machine Learning,15,50.0,1.3,True,1.0
+FL250025,Jennifer Martin,Female,54,Indonesia,Indonesian,Machine Learning,13,75.0,2.9,False,0.92
+FL250026,Anna Mccann,Female,22,South Korea,Korean,DevOps,0,30.0,1.2,True,0.7
+FL250027,Marissa Bass,Female,34,Japan,Japanese,Blockchain Development,8,20.0,0.0,True,0.89
+FL250028,Alexis Day,Female,36,Russia,Russian,Graphic Design,11,-1.0,1.8,True,0.86
+FL250029,Megan Jones,Female,47,Canada,English,AI,22,30.0,1.3,False,0.62
+FL250030,Lori Smith,Female,41,Netherlands,Dutch,Data Analysis,14,75.0,1.2,False,-1
+FL250031,Eric Carpenter,Male,22,Netherlands,Dutch,DevOps,4,-1.0,1.0,True,-1
+FL250032,Timothy Daniels,Male,38,France,French,Machine Learning,19,100.0,4.2,False,0.68
+FL250033,Robert Nelson,Male,46,Egypt,Arabic,AI,9,20.0,1.4,True,0.76
+FL250034,Michael Anderson,Male,-1,South Korea,Korean,AI,9,40.0,2.4,True,0.82
+FL250035,Jessica Snyder,Female,54,United States,English,Web Development,32,75.0,1.0,True,0.81
+FL250036,Emily Daniels,Female,52,South Korea,Korean,Web Development,28,20.0,-1,False,-1
+FL250037,Jamie Ramirez,Female,42,Japan,Japanese,Mobile Apps,6,40.0,-1,False,0.63
+FL250038,Amy Harrison,Female,29,Netherlands,Dutch,Graphic Design,10,40.0,2.2,False,0.67
+FL250039,Melinda White,Female,42,South Africa,Afrikaans,Mobile Apps,23,50.0,3.2,True,-1
+FL250040,James Hernandez,Male,60,Japan,Japanese,Web Development,13,20.0,3.6,False,0.8
+FL250041,Angelica Rogers,Female,59,United Kingdom,English,AI,3,50.0,0.0,False,-1
+FL250042,Savannah Williams,Female,21,Canada,English,Web Development,0,30.0,2.7,True,0.84
+FL250043,Kaitlyn Schmidt,Female,35,Germany,German,DevOps,10,50.0,0.0,False,-1
+FL250044,Jason Singh,Male,41,United Kingdom,English,Data Analysis,-1,20.0,2.8,True,0.63
+FL250045,Michelle Ramirez,Female,51,Netherlands,Dutch,Machine Learning,23,20.0,2.5,False,0.8
+FL250046,James Brown,Male,41,South Africa,Afrikaans,Web Development,9,75.0,4.9,True,0.74
+FL250047,Mrs. Samantha Simmons,Female,47,Egypt,Arabic,DevOps,15,30.0,4.5,True,0.85
+FL250048,Chase Mason,Male,25,China,Mandarin,Graphic Design,4,50.0,2.7,False,0.77
+FL250049,Dominique Ward,Female,25,Mexico,Spanish,Mobile Apps,7,20.0,1.9,False,-1
+FL250050,Lance Griffin,Male,29,Netherlands,Dutch,UI/UX Design,1,20.0,1.4,True,0.63
+FL250051,Julie Burgess,Female,23,Argentina,Spanish,Cybersecurity,0,75.0,1.9,True,0.79
+FL250052,Don Scott,Male,31,France,French,Data Analysis,8,50.0,3.4,False,-1
+FL250053,Kyle Atkinson,Male,51,Germany,German,Machine Learning,33,75.0,3.3,False,0.68
+FL250054,Jimmy Hogan,Unknown,-1,Spain,Spanish,UI/UX Design,1,30.0,0.0,False,0.68
+FL250055,Jennifer Mcintyre,Female,29,Turkey,Turkish,Cybersecurity,11,100.0,2.3,True,0.72
+FL250056,Larry Simpson,Male,50,United Kingdom,English,AI,15,-1.0,2.0,True,0.65
+FL250057,Laura Price,Female,26,United Kingdom,English,DevOps,8,50.0,1.3,False,0.76
+FL250058,Mark Wright,Male,38,Canada,English,AI,17,40.0,4.0,True,0.9
+FL250059,Samantha Mcdaniel,Female,23,India,Hindi,Mobile Apps,-1,75.0,3.6,True,0.65
+FL250060,Barbara Foster,Female,51,South Africa,Afrikaans,DevOps,28,40.0,3.9,False,0.63
+FL250061,Courtney Tran,Female,51,Indonesia,Indonesian,AI,33,75.0,0.0,True,-1
+FL250062,Eddie Todd,Male,47,Germany,German,AI,18,75.0,0.0,False,-1
+FL250063,Christine Johnson,Female,34,Russia,Russian,UI/UX Design,16,20.0,2.3,True,0.93
+FL250064,Leah Phelps,Female,58,Indonesia,Indonesian,Data Analysis,35,50.0,4.7,False,0.7
+FL250065,Rebekah Williams,Female,50,Russia,Russian,AI,14,-1.0,3.5,True,0.83
+FL250066,Crystal Wilson,Female,34,Spain,Spanish,Web Development,12,40.0,2.4,True,0.64
+FL250067,Ashley Cordova,Female,45,Brazil,Portuguese,AI,11,75.0,4.0,False,1.0
+FL250068,Vicki Kelly,Female,55,Brazil,Portuguese,Web Development,0,40.0,0.0,True,-1
+FL250069,Corey Warren,Unknown,-1,Argentina,Spanish,UI/UX Design,6,100.0,1.5,False,-1
+FL250070,Gina Thompson,Female,60,China,Mandarin,UI/UX Design,38,20.0,2.0,False,0.71
+FL250071,Yvonne Berg,Female,33,South Africa,Afrikaans,Mobile Apps,11,-1.0,-1,True,0.84
+FL250072,Thomas Miller,Male,60,Italy,Italian,DevOps,13,50.0,1.0,False,-1
+FL250073,Nicholas Burton,Male,40,United States,English,Web Development,9,100.0,4.5,True,0.69
+FL250074,Jorge Riley,Male,59,Australia,English,Blockchain Development,4,-1.0,1.9,False,0.88
+FL250075,Melvin Harris,Male,36,Italy,Italian,Machine Learning,14,100.0,3.7,False,-1
+FL250076,Jeremy Meyer,Male,32,India,Hindi,Data Analysis,-1,30.0,1.9,True,0.96
+FL250077,Timothy Lee,Male,59,Australia,English,AI,9,75.0,4.0,True,0.96
+FL250078,Diana Bautista,Female,54,Spain,Spanish,DevOps,32,40.0,1.8,False,-1
+FL250079,Leslie Rodriguez,Female,37,Canada,English,Graphic Design,9,-1.0,0.0,True,0.89
+FL250080,Noah Wiggins,Male,54,India,Hindi,Machine Learning,21,100.0,4.6,False,-1
+FL250081,Bridget Williams,Female,33,Argentina,Spanish,UI/UX Design,12,100.0,3.6,False,0.63
+FL250082,Veronica Baker,Female,25,Egypt,Arabic,Web Development,7,40.0,4.4,False,0.81
+FL250083,Andrew Avila,Male,-1,China,Mandarin,DevOps,3,40.0,4.6,False,0.74
+FL250084,Michael Roberson,Male,35,South Korea,Korean,Web Development,5,75.0,3.2,False,0.72
+FL250085,Austin Jenkins,Male,59,South Korea,Korean,AI,30,40.0,0.0,True,-1
+FL250086,Brenda Green,Female,21,China,Mandarin,DevOps,2,100.0,2.6,True,0.85
+FL250087,Samuel Pierce,Male,25,United States,English,Mobile Apps,2,75.0,3.7,False,-1
+FL250088,Briana Smith,Female,38,Mexico,Spanish,Web Development,19,75.0,2.3,False,0.61
+FL250089,Ronald Barrett,Male,57,Russia,Russian,AI,16,100.0,3.1,False,-1
+FL250090,Matthew Smith,Male,32,India,Hindi,Mobile Apps,10,20.0,2.4,False,0.86
+FL250091,Logan Huang,Male,21,Italy,Italian,DevOps,2,100.0,1.6,True,0.97
+FL250092,Miranda Hutchinson,Female,57,Canada,English,Cybersecurity,18,50.0,2.4,True,0.63
+FL250093,Paul Richardson,Male,53,China,Mandarin,UI/UX Design,21,100.0,-1,True,0.97
+FL250094,Jose Jones,Male,35,Russia,Russian,Blockchain Development,3,30.0,3.8,True,0.81
+FL250095,Denise Smith,Female,54,China,Mandarin,Machine Learning,17,20.0,1.7,False,0.69
+FL250096,Shelby Mcmahon,Female,36,Italy,Italian,UI/UX Design,0,20.0,1.3,True,0.64
+FL250097,Bethany Wright,Female,49,Spain,Spanish,Cybersecurity,25,50.0,5.0,False,0.77
+FL250098,David Ortiz,Male,37,United States,English,Blockchain Development,17,20.0,3.3,False,0.96

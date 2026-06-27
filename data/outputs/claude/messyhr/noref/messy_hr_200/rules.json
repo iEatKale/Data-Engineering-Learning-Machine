@@ -1,0 +1,166 @@
+{
+  "target_columns": [
+    "Age",
+    "Salary",
+    "Gender",
+    "Department",
+    "Position",
+    "Joining_Date",
+    "Performance_Score",
+    "Employee_Statement",
+    "Age_status",
+    "Salary_status",
+    "Gender_status",
+    "Department_status",
+    "Position_status",
+    "Joining_Date_status",
+    "Performance_Score_status",
+    "Employee_Statement_status",
+    "Salary_validated",
+    "Gender_validated",
+    "Position_validated",
+    "Joining_Date_validated",
+    "Performance_Score_validated",
+    "Department_validated",
+    "Age_validated",
+    "Employee_Statement_validated"
+  ],
+  "rename_map": {
+    "Age": "Age",
+    "Salary": "Salary",
+    "Gender": "Gender",
+    "Department": "Department",
+    "Position": "Position",
+    "Joining Date": "Joining_Date",
+    "Performance Score": "Performance_Score",
+    "Employee Statement": "Employee_Statement",
+    "Age_status": "Age_status",
+    "Salary_status": "Salary_status",
+    "Gender_status": "Gender_status",
+    "Department_status": "Department_status",
+    "Position_status": "Position_status",
+    "Joining Date_status": "Joining_Date_status",
+    "Performance Score_status": "Performance_Score_status",
+    "Employee Statement_status": "Employee_Statement_status",
+    "Salary_validated": "Salary_validated",
+    "Gender_validated": "Gender_validated",
+    "Position_validated": "Position_validated",
+    "Joining Date_validated": "Joining_Date_validated",
+    "Performance Score_validated": "Performance_Score_validated",
+    "Department_validated": "Department_validated",
+    "Age_validated": "Age_validated",
+    "Employee Statement_validated": "Employee_Statement_validated"
+  },
+  "value_normalisation": {
+    "Gender": {
+      "allowed_values": [
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "mapping": {
+        "male": "Male",
+        "female": "Female",
+        "other": "Other"
+      }
+    },
+    "Department": {
+      "allowed_values": [
+        "HR",
+        "IT",
+        "Sales",
+        "Finance",
+        "Marketing"
+      ],
+      "mapping": {}
+    },
+    "Position": {
+      "allowed_values": [
+        "Director",
+        "Manager",
+        "Analyst",
+        "Assistant",
+        "Clerk"
+      ],
+      "mapping": {
+        "Ms.": "Clerk",
+        "HR employee": "Assistant",
+        "HR": "Assistant",
+        "Administrator": "Assistant"
+      }
+    },
+    "Performance_Score": {
+      "allowed_values": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F"
+      ],
+      "mapping": {}
+    }
+  },
+  "parsing_rules": {
+    "Age": {
+      "type": "numeric",
+      "description": "Convert text numbers (thirty, SIXTY) to integers. Handle missing values.",
+      "text_to_number_mapping": {
+        "thirty": 30,
+        "SIXTY": 60
+      }
+    },
+    "Salary": {
+      "type": "numeric",
+      "description": "Convert text salary (SIXTY THOUSAND) to numeric. Handle NAN and missing values.",
+      "text_to_number_mapping": {
+        "SIXTY THOUSAND": 60000,
+        "Salary": null
+      }
+    },
+    "Joining_Date": {
+      "type": "date",
+      "description": "Standardize date formats (05-Apr-18, 1/15/2020, 2019.12.01) to YYYY-MM-DD format.",
+      "input_formats": [
+        "DD-MMM-YY",
+        "M/DD/YYYY",
+        "YYYY.MM.DD"
+      ],
+      "output_format": "YYYY-MM-DD"
+    },
+    "Performance_Score": {
+      "type": "categorical",
+      "description": "Standardize to single letter grades A-F. Handle invalid values.",
+      "allowed_values": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F"
+      ]
+    },
+    "Status_columns": {
+      "type": "numeric",
+      "description": "Numeric status indicators (0-7). Values outside 0-7 range should be flagged as anomalies.",
+      "valid_range": [
+        0,
+        7
+      ]
+    }
+  },
+  "missing_value_policy": {
+    "Age": "empty_string",
+    "Salary": "empty_string",
+    "Gender": "empty_string",
+    "Department": "empty_string",
+    "Position": "empty_string",
+    "Joining_Date": "empty_string",
+    "Performance_Score": "empty_string",
+    "Employee_Statement": "empty_string",
+    "Status_columns": "empty_string",
+    "Validated_columns": "empty_string",
+    "NAN_representation": "empty_string"
+  },
+  "row_policy": {
+    "drop_rows": false
+  }
+}

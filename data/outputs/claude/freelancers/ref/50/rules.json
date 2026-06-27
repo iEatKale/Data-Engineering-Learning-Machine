@@ -1,0 +1,101 @@
+{
+  "target_columns": [
+    "freelancer_ID",
+    "forename",
+    "surname",
+    "gender",
+    "age",
+    "country",
+    "language",
+    "primary_skill",
+    "years_of_experience",
+    "hourly_rate (USD)",
+    "rating",
+    "is_active",
+    "client_satisfaction"
+  ],
+  "rename_map": {
+    "name": "forename and surname"
+  },
+  "value_normalisation": {
+    "gender": {
+      "standard_values": [
+        "M",
+        "F"
+      ],
+      "mapping": {
+        "M": "M",
+        "F": "F",
+        "MALE": "M",
+        "male": "M",
+        "m": "M",
+        "FEMALE": "F",
+        "female": "F",
+        "f": "F"
+      }
+    },
+    "is_active": {
+      "standard_values": [
+        "Y",
+        "N"
+      ],
+      "mapping": {
+        "Y": "Y",
+        "N": "N",
+        "yes": "Y",
+        "no": "N",
+        "1": "Y",
+        "0": "N",
+        "TRUE": "Y",
+        "FALSE": "N"
+      }
+    },
+    "primary_skill": {
+      "standard_values": [
+        "Web Development",
+        "Cybersecurity",
+        "Machine Learning",
+        "Data Analysis",
+        "AI",
+        "Artificial Intelligence",
+        "Mobile Apps",
+        "DevOps",
+        "UI/UX Design"
+      ],
+      "mapping": {
+        "AI": "Artificial Intelligence"
+      }
+    }
+  },
+  "parsing_rules": {
+    "hourly_rate (USD)": {
+      "description": "Remove currency symbols ($, USD) and parse as integer",
+      "pattern": "^(\\$|USD\\s)?([0-9]+)$",
+      "extract_group": 2
+    },
+    "client_satisfaction": {
+      "description": "Convert percentage to decimal (0-1 range)",
+      "pattern": "^([0-9]+)%?$",
+      "transform": "divide by 100"
+    },
+    "years_of_experience": {
+      "description": "Parse as integer or NULL if empty"
+    },
+    "rating": {
+      "description": "Parse as decimal, keep as-is"
+    },
+    "age": {
+      "description": "Parse as integer"
+    }
+  },
+  "missing_value_policy": {
+    "empty_string_representation": "NULL",
+    "unparseable_numeric": "NULL",
+    "unparseable_percentage": "NULL",
+    "empty_is_active": "NULL",
+    "empty_rating": "NULL"
+  },
+  "row_policy": {
+    "drop_rows": false
+  }
+}

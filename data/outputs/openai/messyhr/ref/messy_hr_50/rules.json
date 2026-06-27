@@ -1,0 +1,62 @@
+{
+  "target_columns": [
+    "Age",
+    "Salary",
+    "Gender",
+    "Department",
+    "Position",
+    "Joining Date",
+    "Performance Score",
+    "Employee Statement",
+    "Age_status",
+    "Salary_status",
+    "Gender_status",
+    "Department_status",
+    "Position_status",
+    "Joining Date_status",
+    "Performance Score_status",
+    "Employee Statement_status",
+    "Salary_validated",
+    "Gender_validated",
+    "Position_validated",
+    "Joining Date_validated",
+    "Performance Score_validated",
+    "Department_validated",
+    "Age_validated",
+    "Employee Statement_validated",
+    "Unnamed: 24",
+    "Unnamed: 25"
+  ],
+  "rename_map": {},
+  "value_normalisation": {
+    "Age": {
+      "thirty": "30",
+      "": null
+    },
+    "Salary": {
+      "NAN": null,
+      "SIXTY THOUSAND": "60000",
+      "": null
+    },
+    "Joining Date": {
+      "MM/DD/YYYY or M/D/YYYY": "DD/MM/YYYY",
+      "YYYY.MM.DD": "DD/MM/YYYY",
+      "DD-MMM-YY": "DD/MM/YYYY",
+      "": null
+    }
+  },
+  "parsing_rules": {
+    "Age": "Convert textual numbers like 'thirty' to numeric string '30'; empty or unparseable values to null",
+    "Salary": "Convert textual numbers like 'SIXTY THOUSAND' to numeric string '60000'; 'NAN' or empty to null; otherwise parse as integer",
+    "Joining Date": "Parse various date formats (M/D/YYYY, MM/DD/YYYY, DD-MMM-YY, YYYY.MM.DD) and convert to DD/MM/YYYY format; empty to null"
+  },
+  "missing_value_policy": {
+    "Age": "null",
+    "Salary": "null",
+    "Joining Date": "null",
+    "Other columns": "preserve original or empty string if missing"
+  },
+  "row_policy": {
+    "drop_rows": false
+  }
+}

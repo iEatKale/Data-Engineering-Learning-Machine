@@ -1,0 +1,213 @@
+{
+  "target_columns": [
+    "Age",
+    "Salary",
+    "Gender",
+    "Department",
+    "Position",
+    "Joining Date",
+    "Performance Score",
+    "Employee Statement",
+    "Age_status",
+    "Salary_status",
+    "Gender_status",
+    "Department_status",
+    "Position_status",
+    "Joining Date_status",
+    "Performance Score_status",
+    "Employee Statement_status",
+    "Salary_validated",
+    "Gender_validated",
+    "Position_validated",
+    "Joining Date_validated",
+    "Performance Score_validated",
+    "Department_validated",
+    "Age_validated",
+    "Employee Statement_validated"
+  ],
+  "rename_map": {},
+  "value_normalisation": {
+    "Gender": {
+      "allowed_values": [
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "default_value": "Other"
+    },
+    "Performance Score": {
+      "allowed_values": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "MA"
+      ],
+      "default_value": "NULL"
+    },
+    "Age_status": {
+      "allowed_values": [
+        "0",
+        "5",
+        "6",
+        "7"
+      ],
+      "default_value": "0"
+    },
+    "Salary_status": {
+      "allowed_values": [
+        "0",
+        "5",
+        "6"
+      ],
+      "default_value": "0"
+    },
+    "Gender_status": {
+      "allowed_values": [
+        "0",
+        "5",
+        "6"
+      ],
+      "default_value": "0"
+    },
+    "Department_status": {
+      "allowed_values": [
+        "0",
+        "5",
+        "6"
+      ],
+      "default_value": "0"
+    },
+    "Position_status": {
+      "allowed_values": [
+        "0",
+        "5",
+        "6"
+      ],
+      "default_value": "0"
+    },
+    "Joining Date_status": {
+      "allowed_values": [
+        "0",
+        "6"
+      ],
+      "default_value": "0"
+    },
+    "Performance Score_status": {
+      "allowed_values": [
+        "0",
+        "5",
+        "6",
+        "7"
+      ],
+      "default_value": "0"
+    },
+    "Employee Statement_status": {
+      "allowed_values": [
+        "0",
+        "6",
+        "7"
+      ],
+      "default_value": "0"
+    },
+    "Salary_validated": {
+      "allowed_values": [
+        "",
+        "NULL"
+      ],
+      "default_value": ""
+    },
+    "Gender_validated": {
+      "allowed_values": [
+        "",
+        "NULL"
+      ],
+      "default_value": ""
+    },
+    "Position_validated": {
+      "allowed_values": [
+        "",
+        "NULL"
+      ],
+      "default_value": ""
+    },
+    "Joining Date_validated": {
+      "allowed_values": [
+        "",
+        "NULL"
+      ],
+      "default_value": ""
+    },
+    "Performance Score_validated": {
+      "allowed_values": [
+        "",
+        "NULL"
+      ],
+      "default_value": ""
+    },
+    "Department_validated": {
+      "allowed_values": [
+        "",
+        "NULL"
+      ],
+      "default_value": ""
+    },
+    "Age_validated": {
+      "allowed_values": [
+        "",
+        "NULL"
+      ],
+      "default_value": ""
+    },
+    "Employee Statement_validated": {
+      "allowed_values": [
+        "",
+        "NULL"
+      ],
+      "default_value": ""
+    }
+  },
+  "parsing_rules": {
+    "Age": {
+      "text_to_number": {
+        "mappings": {
+          "thirty": 30,
+          "thirty five": 35,
+          "twenty five": 25,
+          "fifty": 50
+        },
+        "default_value": null
+      }
+    },
+    "Salary": {
+      "text_to_number": {
+        "mappings": {
+          "SIXTY THOUSAND": 60000,
+          "NAN": null
+        },
+        "regex_pattern": "^\\d+$|^\\d{1,3}(?:\\,\\d{3})*$",
+        "default_value": null
+      }
+    },
+    "Joining Date": {
+      "date_formats": [
+        "MM/dd/yyyy",
+        "dd-MM-yyyy",
+        "yyyy.MM.dd",
+        "MM-dd-yyyy"
+      ],
+      "default_value": null
+    }
+  },
+  "missing_value_policy": {
+    "empty_string": "",
+    "null_value": "NULL",
+    "unparseable_value": "NULL",
+    "invalid_value": "NULL"
+  },
+  "row_policy": {
+    "drop_rows": false
+  }
+}

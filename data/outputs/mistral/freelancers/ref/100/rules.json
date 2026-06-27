@@ -1,0 +1,155 @@
+{
+  "target_columns": [
+    "freelancer_ID",
+    "forename",
+    "surname",
+    "gender",
+    "age",
+    "country",
+    "language",
+    "primary_skill",
+    "years_of_experience",
+    "hourly_rate (USD)",
+    "rating",
+    "is_active",
+    "client_satisfaction"
+  ],
+  "rename_map": {
+    "name": "forename,surname",
+    "primary_skill": "primary_skill",
+    "is_active": "is_active",
+    "client_satisfaction": "client_satisfaction"
+  },
+  "value_normalisation": {
+    "gender": {
+      "allowed_values": [
+        "M",
+        "F",
+        "MALE",
+        "FEMALE",
+        "male",
+        "female",
+        "m",
+        "f",
+        "Male",
+        "Female"
+      ],
+      "standard_value": {
+        "regex_match": "^[MF]$",
+        "replace_with": "$0"
+      }
+    },
+    "is_active": {
+      "allowed_values": [
+        "Y",
+        "N",
+        "yes",
+        "no",
+        "YES",
+        "NO",
+        "TRUE",
+        "FALSE",
+        "true",
+        "false"
+      ],
+      "standard_value": {
+        "regex_match": "^[YN]$",
+        "replace_with": "$0"
+      },
+      "null_value": [
+        "",
+        "NULL",
+        "null"
+      ]
+    },
+    "client_satisfaction": {
+      "allowed_values": [
+        "%"
+      ],
+      "standard_value": {
+        "regex_match": "^([0-9]+)%$",
+        "replace_with": "$1/100"
+      },
+      "null_value": [
+        "",
+        "NULL",
+        "null"
+      ]
+    },
+    "primary_skill": {
+      "allowed_values": {
+        "Web Development": [
+          "Web Development"
+        ],
+        "Machine Learning": [
+          "Machine Learning",
+          "ML"
+        ],
+        "AI": [
+          "AI",
+          "Artificial Intelligence"
+        ],
+        "Cybersecurity": [
+          "Cybersecurity"
+        ],
+        "Data Analysis": [
+          "Data Analysis"
+        ],
+        "UI/UX Design": [
+          "UI/UX Design",
+          "UX Design"
+        ],
+        "Mobile Apps": [
+          "Mobile Apps"
+        ],
+        "DevOps": [
+          "DevOps"
+        ]
+      }
+    }
+  },
+  "parsing_rules": {
+    "age": {
+      "type": "integer",
+      "null_value": [
+        "",
+        "NULL",
+        "null"
+      ]
+    },
+    "years_of_experience": {
+      "type": "integer",
+      "null_value": [
+        "",
+        "NULL",
+        "null"
+      ]
+    },
+    "hourly_rate (USD)": {
+      "type": "float",
+      "regex_match": "^(USD )?([0-9]+)$|^\\$([0-9]+)$",
+      "replace_with": "$2",
+      "null_value": [
+        "",
+        "NULL",
+        "null"
+      ]
+    },
+    "rating": {
+      "type": "float",
+      "null_value": [
+        "",
+        "NULL",
+        "null"
+      ]
+    }
+  },
+  "missing_value_policy": {
+    "default": "",
+    "numeric_fields": "NULL",
+    "categorical_fields": "NULL"
+  },
+  "row_policy": {
+    "drop_rows": false
+  }
+}

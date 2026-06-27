@@ -1,0 +1,254 @@
+Age,Salary,Gender,Department,Position,Joining Date,Performance Score,Employee Statement,Age_status,Salary_status,Gender_status,Department_status,Position_status,Joining Date_status,Performance Score_status,Employee Statement_status,Salary_validated,Gender_validated,Position_validated,Joining Date_validated,Performance Score_validated,Department_validated,Age_validated,Employee Statement_validated
+30,55000,Female,HR,Director,2018-04-05,F,"I find my daily tasks engaging, as I became better at organizing my tasks, during ongoing work cycles.",6,6,6,6,0,0,6,0,0,0,0,0,0,0,0,0,0,0
+25,-1,Male,HR,Manager,2019-12-01,C,"I find my daily tasks engaging, as I became better at organizing my tasks, while handling routine duties.",0,5,0,6,0,0,0,0,0,0,0,0,0,0,0,0
+40,55000,Female,HR,Analyst,2018-04-05,C,"I find my daily tasks engaging, as I became better at organizing my tasks, as part of my regular workflow.",6,0,6,0,6,0,0,0,0,0,0,0,0,0,0,0
+25,70000,Male,Finance,Director,2019-12-01,C,"I find my daily tasks engaging, after understanding expectations more clearly, over the past months.",0,6,6,0,6,6,6,0,0,0,0,0,0,0,0,0
+50,-1,Other,Marketing,Manager,2020-02-20,F,"I find my daily tasks engaging, after understanding expectations more clearly, during my time in this role.",6,5,6,0,0,0,0,0,0,0,0,0,0,0,0,0
+30,65000,Female,HR,Clerk,2018-04-05,D,"I find my daily tasks engaging, after understanding expectations more clearly, as I settled into my responsibilities.",6,6,6,6,0,6,6,0,0,0,0,0,0,0,0,0
+-1,70000,Male,HR,Assistant,2020-01-15,D,"I find my daily tasks engaging, after understanding expectations more clearly, while adapting to daily routines.",5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+40,50000,Male,IT,Assistant,2019-03-25,A,"I find my daily tasks engaging, after understanding expectations more clearly, through regular collaboration.",6,6,6,0,0,7,0,0,0,0,0,0,0,0,0,0
+30,65000,Other,Finance,Clerk,2020-02-20,F,"I find my daily tasks engaging, after understanding expectations more clearly, while working on assigned tasks.",0,0,6,6,0,6,6,0,0,0,0,0,0,0,0,0
+50,60000,Other,HR,Analyst,2018-04-05,A,"I find my daily tasks engaging, after understanding expectations more clearly, as part of normal operations.",0,6,6,0,6,6,0,0,0,0,0,0,0,0,0,0
+40,50000,Other,IT,Director,2019-12-01,F,"I find my daily tasks engaging, after understanding expectations more clearly, during ongoing work cycles.",6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+35,50000,Female,Sales,Assistant,2019-12-01,A,"I find my daily tasks engaging, after understanding expectations more clearly, while handling routine duties.",6,6,6,6,0,0,0,0,0,0,0,0,0,0,0,0
+25,60000,Male,HR,Clerk,2020-02-20,B,MA,6,6,6,6,0,0,0,7,0,0,0,0,0,0,0,0
+50,-1,Other,HR,Clerk,2019-03-25,C,"I find my daily tasks engaging, by improving how I plan my work, over the past months.",0,5,0,6,0,6,0,0,0,0,0,0,0,0,0,0
+35,50000,Female,IT,Analyst,2019-12-01,C,"I find my daily tasks engaging, by improving how I plan my work, during my time in this role.",0,6,6,0,0,0,0,0,0,0,0,0,0,0,0,0
+30,65000,Female,Finance,Analyst,2020-01-15,D,"I find my daily tasks engaging, by improving how I plan my work, as I settled into my responsibilities.",6,0,6,0,0,6,6,0,0,0,0,0,0,0,0,0
+-1,70000,Female,HR,Manager,2020-02-20,B,"I find my daily tasks engaging, by improving how I plan my work, while adapting to daily routines.",5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+40,50000,Other,Sales,Assistant,2018-04-05,C,"I find my daily tasks engaging, by improving how I plan my work, through regular collaboration.",6,6,6,6,0,6,6,0,0,0,0,0,0,0,0,0
+25,65000,Other,HR,Manager,2018-04-05,D,"I find my daily tasks engaging, by improving how I plan my work, while working on assigned tasks.",6,6,0,0,6,0,0,0,0,0,0,0,0,0,0,0
+40,55000,Male,Sales,Clerk,2020-01-15,B,"I find my daily tasks engaging, by improving how I plan my work, as part of normal operations.",0,6,0,6,0,0,0,0,0,0,0,0,0,0,0,0
+30,65000,Male,Marketing,Director,2019-12-01,C,"I find my daily tasks engaging, by improving how I plan my work, during ongoing work cycles.",6,6,6,6,0,6,6,0,0,0,0,0,0,0,0,0
+40,70000,Other,Marketing,Director,2020-02-20,A,"I find my daily tasks engaging, by improving how I plan my work, while handling routine duties.",0,0,6,6,0,0,0,0,0,0,0,0,0,0,0,0
+25,65000,Female,Sales,Analyst,2020-01-15,F,"I find my daily tasks engaging, by improving how I plan my work, as part of my regular workflow.",0,6,6,6,6,6,0,0,0,0,0,0,0,0,0,0
+30,60000,Female,Finance,Director,2019-12-01,B,"I find my daily tasks engaging, through experience working with different people, over the past months.",0,6,6,0,0,6,6,0,0,0,0,0,0,0,0,0
+40,70000,Female,HR,Director,2020-02-20,D,"I find my daily tasks engaging, through experience working with different people, during my time in this role.",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+-1,-1,Male,HR,Director,2018-04-05,B,"I find my daily tasks engaging, through experience working with different people, as I settled into my responsibilities.",5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+50,55000,Female,Marketing,Clerk,2020-02-20,D,"I find my daily tasks engaging, through experience working with different people, while adapting to daily routines.",0,0,6,6,0,6,0,0,0,0,0,0,0,0,0,0
+30,60000,Male,Sales,Director,2019-03-25,B,"I find my daily tasks engaging, through experience working with different people, through regular collaboration.",0,6,6,6,0,0,0,0,0,0,0,0,0,0,0,0
+50,-1,Male,HR,Director,2020-02-20,D,"I find my daily tasks engaging, through experience working with different people, while working on assigned tasks.",0,5,6,6,0,0,0,0,0,0,0,0,0,0,0,0
+30,65000,Female,HR,Director,2019-03-25,C,"I find my daily tasks engaging, through experience working with different people, as part of normal operations.",0,6,6,0,0,0,0,0,0,0,0,0,0,0,0,0
+-1,70000,Female,Finance,Manager,2020-02-20,A,"I find my daily tasks engaging, through experience working with different people, during ongoing work cycles.",5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+50,55000,Other,IT,Clerk,2019-03-25,C,"I find my daily tasks engaging, through experience working with different people, while handling routine duties.",6,6,0,0,0,6,0,0,0,0,0,0,0,0,0,0
+35,60000,Other,Marketing,Analyst,2018-04-05,A,"I find my daily tasks engaging, through experience working with different people, as part of my regular workflow.",6,6,6,6,0,0,6,0,0,0,0,0,0,0,0,0
+25,-1,Female,Marketing,Manager,2019-12-01,C,"I find my daily tasks engaging, as I learned to handle feedback constructively, over the past months.",0,5,6,6,0,0,0,0,0,0,0,0,0,0,0,0
+35,-1,Male,IT,Assistant,2019-03-25,C,"I find my daily tasks engaging, as I learned to handle feedback constructively, during my time in this role.",6,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+40,55000,Male,HR,Clerk,2019-03-25,B,MA,0,6,0,0,0,0,6,7,0,0,0,0,0,0,0,0
+-1,65000,Male,Finance,Clerk,2018-04-05,F,"I find my daily tasks engaging, as I learned to handle feedback constructively, while adapting to daily routines.",5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+35,55000,Male,Finance,Assistant,2019-03-25,D,"I find my daily tasks engaging, as I learned to handle feedback constructively, through regular collaboration.",6,6,6,6,0,0,0,0,0,0,0,0,0,0,0,0
+30,-1,Male,Marketing,Assistant,2020-01-15,D,"I find my daily tasks engaging, as I learned to handle feedback constructively, while working on assigned tasks.",0,5,6,0,0,0,6,0,0,0,0,0,0,0,0,0
+40,50000,Other,Finance,Assistant,2018-04-05,D,"I find my daily tasks engaging, as I learned to handle feedback constructively, as part of normal operations.",6,0,6,0,0,6,6,0,0,0,0,0,0,0,0,0
+40,60000,Female,IT,Analyst,2020-01-15,A,"I find my daily tasks engaging, as I learned to handle feedback constructively, during ongoing work cycles.",0,0,6,6,0,0,0,0,0,0,0,0,0,0,0,0
+35,55000,Other,HR,Director,2018-04-05,D,"I find my daily tasks engaging, as I learned to handle feedback constructively, while handling routine duties.",6,0,6,0,0,0,6,0,0,0,0,0,0,0,0,0
+35,-1,Male,IT,Clerk,2019-03-25,D,"I find my daily tasks engaging, as I learned to handle feedback constructively, as part of my regular workflow.",0,5,0,0,0,6,0,0,0,0,0,0,0,0,0,0
+-1,65000,Male,Sales,Director,2020-01-15,B,"I find my daily tasks engaging, by becoming more aware of priorities, over the past months.",5,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0
+25,-1,Male,Marketing,Director,2019-03-25,C,"I find my daily tasks engaging, by becoming more aware of priorities, during my time in this role.",0,5,0,0,6,6,0,0,0,0,0,0,0,0,0,0
+35,65000,Male,Finance,Assistant,2018-04-05,D,"I find my daily tasks engaging, by becoming more aware of priorities, as I settled into my responsibilities.",6,6,6,0,0,6,0,0,0,0,0,0,0,0,0,0
+35,55000,Female,Sales,Analyst,2019-03-25,F,"I find my daily tasks engaging, by becoming more aware of priorities, while adapting to daily routines.",0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0
+50,65000,Male,Finance,Manager,2020-01-15,D,"I find my daily tasks engaging, by becoming more aware of priorities, through regular collaboration.",6,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0
+30,70000,Female,HR,Analyst,2020-01-15,A,"I find my daily tasks engaging, by becoming more aware of priorities, while working on assigned tasks.",6,0,6,0,6,6,0,0,0,0,0,0,0,0,0,0
+50,70000,Male,HR,Director,2019-03-25,A,"I find my daily tasks engaging, by becoming more aware of priorities, as part of normal operations.",0,6,0,6,0,0,0,0,0,0,0,0,0,0,0,0
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,

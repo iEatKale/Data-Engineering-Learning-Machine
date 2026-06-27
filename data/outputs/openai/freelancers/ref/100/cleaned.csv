@@ -1,0 +1,99 @@
+freelancer_ID,forename,surname,gender,age,country,language,primary_skill,years_of_experience,hourly_rate (USD),rating,is_active,client_satisfaction
+FL250001,Nicole,Kidd,F,52,Italy,Italian,Blockchain Development,11,100,NULL,N,NULL
+FL250002,Vanessa,Garcia,F,52,Australia,English,Mobile Apps,34,100,3.3,Y,0.84
+FL250003,Juan,Nelson,M,53,Germany,German,Graphic Design,31,50,0,N,0.71
+FL250004,Amanda,Spencer,F,38,Australia,English,Web Development,4,40,1.5,N,0.9
+FL250005,Lynn,Curtis DDS,F,53,Germany,German,Web Development,27,30,4.8,N,0.83
+FL250006,Lisa,Johnson,F,59,Netherlands,Dutch,Artificial Intelligence,14,30,2.4,N,NULL
+FL250007,Eric,Myers,M,52,Indonesia,Indonesian,Data Analysis,10,75,3.1,N,0.94
+FL250008,Ricky,Graham,M,43,Italy,Italian,Blockchain Development,14,40,4.6,N,0.94
+FL250009,Sean,Martin,M,26,United States,English,Blockchain Development,4,NULL,4,Y,0.76
+FL250010,Matthew,Lloyd,M,52,Turkey,Turkish,Artificial Intelligence,22,50,NULL,Y,NULL
+FL250011,Gavin,Randall,M,40,United Kingdom,English,Data Analysis,17,40,3.6,Y,0.77
+FL250012,Michelle,Curtis,F,55,Argentina,Spanish,UI/UX Design,15,NULL,NULL,Y,0.86
+FL250013,Alice,Schneider,F,57,United Kingdom,English,Cybersecurity,18,NULL,2,N,0.86
+FL250014,Phillip,Shelton,M,38,Argentina,Spanish,Graphic Design,20,75,2.9,Y,0.93
+FL250015,Edward,Ferguson,M,50,Germany,German,Data Analysis,22,75,3.7,Y,0.7
+FL250016,Wyatt,Stout,M,42,Japan,Japanese,Data Analysis,0,30,1.2,N,0.69
+FL250017,Laura,Johnson,F,39,Australia,English,DevOps,13,30,2.5,N,0.6
+FL250018,Scott,Burns,M,56,India,Hindi,Blockchain Development,NULL,NULL,NULL,NULL,0.87
+FL250019,Tyler,Aguirre,M,56,United States,English,UI/UX Design,31,50,1.1,N,0.75
+FL250020,Matthew,Lawson,M,57,Italy,Italian,Web Development,3,100,1.8,Y,0.68
+FL250021,James,Cherry,M,NULL,Indonesia,Indonesian,Artificial Intelligence,9,50,1.8,N,0.65
+FL250022,Samuel,Sanford,M,51,Japan,Japanese,DevOps,NULL,NULL,2.4,N,0.69
+FL250023,Cesar,Greene,M,51,Brazil,Portuguese,Cybersecurity,21,30,4.7,N,NULL
+FL250024,Melanie,Carter,F,51,South Korea,Korean,Machine Learning,15,50,1.3,Y,1
+FL250025,Jennifer,Martin,F,54,Indonesia,Indonesian,Machine Learning,13,75,2.9,NULL,0.92
+FL250026,Anna,Mccann,F,22,South Korea,Korean,DevOps,0,30,1.2,Y,0.7
+FL250027,Marissa,Bass,F,34,Japan,Japanese,Blockchain Development,8,20,0,Y,0.89
+FL250028,Alexis,Day,F,36,Russia,Russian,Graphic Design,11,NULL,1.8,Y,0.86
+FL250029,Megan,Jones,F,47,Canada,English,Artificial Intelligence,22,30,1.3,N,0.62
+FL250030,Lori,Smith,F,41,Netherlands,Dutch,Data Analysis,14,75,1.2,N,NULL
+FL250031,Eric,Carpenter,M,22,Netherlands,Dutch,DevOps,4,NULL,1,Y,NULL
+FL250032,Timothy,Daniels,M,38,France,French,Machine Learning,19,100,4.2,N,0.68
+FL250033,Robert,Nelson,M,46,Egypt,Arabic,Artificial Intelligence,9,20,1.4,Y,0.76
+FL250034,Michael,Anderson,M,NULL,South Korea,Korean,Artificial Intelligence,9,40,2.4,Y,0.82
+FL250035,Jessica,Snyder,F,54,United States,English,Web Development,32,75,1,Y,0.81
+FL250036,Emily,Daniels,F,52,South Korea,Korean,Web Development,28,20,NULL,N,NULL
+FL250037,Jamie,Ramirez,F,42,Japan,Japanese,Mobile Apps,6,40,NULL,N,0.63
+FL250038,Amy,Harrison,F,29,Netherlands,Dutch,Graphic Design,10,40,2.2,N,0.67
+FL250039,Melinda,White,F,42,South Africa,Afrikaans,Mobile Apps,23,50,3.2,Y,NULL
+FL250040,James,Hernandez,M,60,Japan,Japanese,Web Development,13,20,3.6,N,0.8
+FL250041,Angelica,Rogers,F,59,United Kingdom,English,Artificial Intelligence,3,50,0,N,NULL
+FL250042,Savannah,Williams,F,21,Canada,English,Web Development,0,30,2.7,Y,0.84
+FL250043,Kaitlyn,Schmidt,F,35,Germany,German,DevOps,10,50,0,N,NULL
+FL250044,Jason,Singh,M,41,United Kingdom,English,Data Analysis,NULL,20,2.8,Y,0.63
+FL250045,Michelle,Ramirez,F,51,Netherlands,Dutch,Machine Learning,23,20,2.5,N,0.8
+FL250046,James,Brown,M,41,South Africa,Afrikaans,Web Development,9,75,4.9,Y,0.74
+FL250047,Mrs. Samantha,Simmons,F,47,Egypt,Arabic,DevOps,15,30,4.5,Y,0.85
+FL250048,Chase,Mason,M,25,China,Mandarin,Graphic Design,4,50,2.7,N,0.77
+FL250049,Dominique,Ward,F,25,Mexico,Spanish,Mobile Apps,7,20,1.9,N,NULL
+FL250050,Lance,Griffin,M,29,Netherlands,Dutch,UI/UX Design,1,20,1.4,Y,0.63
+FL250051,Julie,Burgess,F,23,Argentina,Spanish,Cybersecurity,0,75,1.9,Y,0.79
+FL250052,Don,Scott,M,31,France,French,Data Analysis,8,50,3.4,N,NULL
+FL250053,Kyle,Atkinson,M,51,Germany,German,Machine Learning,33,75,3.3,NULL,0.68
+FL250054,Jimmy,Hogan,M,NULL,Spain,Spanish,UI/UX Design,1,30,0,N,0.68
+FL250055,Jennifer,Mcintyre,F,29,Turkey,Turkish,Cybersecurity,11,100,2.3,Y,0.72
+FL250056,Larry,Simpson,M,50,United Kingdom,English,Artificial Intelligence,15,NULL,2,Y,0.65
+FL250057,Laura,Price,F,26,United Kingdom,English,DevOps,8,50,1.3,N,0.76
+FL250058,Mark,Wright,M,38,Canada,English,Artificial Intelligence,17,40,4,Y,0.9
+FL250059,Samantha,Mcdaniel,F,23,India,Hindi,Mobile Apps,NULL,75,3.6,Y,0.65
+FL250060,Barbara,Foster,F,51,South Africa,Afrikaans,DevOps,28,40,3.9,N,0.63
+FL250061,Courtney,Tran,F,51,Indonesia,Indonesian,Artificial Intelligence,33,75,0,Y,NULL
+FL250062,Eddie,Todd,M,47,Germany,German,Artificial Intelligence,18,75,0,N,NULL
+FL250063,Christine,Johnson,F,34,Russia,Russian,UI/UX Design,16,20,2.3,Y,0.93
+FL250064,Leah,Phelps,F,58,Indonesia,Indonesian,Data Analysis,35,50,4.7,N,0.7
+FL250065,Rebekah,Williams,F,50,Russia,Russian,Artificial Intelligence,14,NULL,3.5,Y,0.83
+FL250066,Crystal,Wilson,F,34,Spain,Spanish,Web Development,12,40,2.4,Y,0.64
+FL250067,Ashley,Cordova,F,45,Brazil,Portuguese,Artificial Intelligence,11,75,4,N,1
+FL250068,Vicki,Kelly,F,55,Brazil,Portuguese,Web Development,0,40,0,Y,NULL
+FL250069,Corey,Warren,M,NULL,Argentina,Spanish,UI/UX Design,6,100,1.5,N,NULL
+FL250070,Gina,Thompson,F,60,China,Mandarin,UI/UX Design,38,20,2,N,0.71
+FL250071,Yvonne,Berg,F,33,South Africa,Afrikaans,Mobile Apps,11,NULL,NULL,Y,0.84
+FL250072,Thomas,Miller,M,60,Italy,Italian,DevOps,13,50,1,N,NULL
+FL250073,Nicholas,Burton,M,40,United States,English,Web Development,9,100,4.5,Y,0.69
+FL250074,Jorge,Riley,M,59,Australia,English,Blockchain Development,4,NULL,1.9,N,0.88
+FL250075,Melvin,Harris,M,36,Italy,Italian,Machine Learning,14,100,3.7,N,NULL
+FL250076,Jeremy,Meyer,M,32,India,Hindi,Data Analysis,NULL,30,1.9,Y,0.96
+FL250077,Timothy,Lee,M,59,Australia,English,Artificial Intelligence,9,75,4,Y,0.96
+FL250078,Diana,Bautista,F,54,Spain,Spanish,DevOps,32,40,1.8,N,NULL
+FL250079,Leslie,Rodriguez,F,37,Canada,English,Graphic Design,9,NULL,0,Y,0.89
+FL250080,Noah,Wiggins,M,54,India,Hindi,Machine Learning,21,100,4.6,N,NULL
+FL250081,Bridget,Williams,F,33,Argentina,Spanish,UI/UX Design,12,100,3.6,N,0.63
+FL250082,Veronica,Baker,F,25,Egypt,Arabic,Web Development,7,40,4.4,NULL,0.81
+FL250083,Andrew,Avila,M,NULL,China,Mandarin,DevOps,3,40,4.6,N,0.74
+FL250084,Michael,Roberson,M,35,South Korea,Korean,Web Development,5,75,3.2,N,0.72
+FL250085,Austin,Jenkins,M,59,South Korea,Korean,Artificial Intelligence,30,40,0,Y,NULL
+FL250086,Brenda,Green,F,21,China,Mandarin,DevOps,2,100,2.6,Y,0.85
+FL250087,Samuel,Pierce,M,25,United States,English,Mobile Apps,2,75,3.7,N,NULL
+FL250088,Briana,Smith,F,38,Mexico,Spanish,Web Development,19,75,2.3,N,0.61
+FL250089,Ronald,Barrett,M,57,Russia,Russian,Artificial Intelligence,16,100,3.1,N,NULL
+FL250090,Matthew,Smith,M,32,India,Hindi,Mobile Apps,10,20,2.4,N,0.86
+FL250091,Logan,Huang,M,21,Italy,Italian,DevOps,2,100,1.6,Y,0.97
+FL250092,Miranda,Hutchinson,F,57,Canada,English,Cybersecurity,18,50,2.4,Y,0.63
+FL250093,Paul,Richardson,M,53,China,Mandarin,UI/UX Design,21,100,NULL,Y,0.97
+FL250094,Jose,Jones,M,35,Russia,Russian,Blockchain Development,3,30,3.8,Y,0.81
+FL250095,Denise,Smith,F,54,China,Mandarin,Machine Learning,17,20,1.7,N,0.69
+FL250096,Shelby,Mcmahon,F,36,Italy,Italian,UI/UX Design,0,20,1.3,Y,0.64
+FL250097,Bethany,Wright,F,49,Spain,Spanish,Cybersecurity,25,50,5,N,0.77
+FL250098,David,Ortiz,M,37,United States,English,Blockchain Development,17,20,3.3,N,0.96

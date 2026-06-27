@@ -1,0 +1,143 @@
+{
+  "target_columns": [
+    "Age",
+    "Salary",
+    "Gender",
+    "Department",
+    "Position",
+    "Joining Date",
+    "Performance Score",
+    "Employee Statement"
+  ],
+  "rename_map": {
+    "Age": "Age",
+    "Salary": "Salary",
+    "Gender": "Gender",
+    "Department": "Department",
+    "Position": "Position",
+    "Joining Date": "Joining Date",
+    "Performance Score": "Performance Score",
+    "Employee Statement": "Employee Statement",
+    "Age_status": "Age_status",
+    "Salary_status": "Salary_status",
+    "Gender_status": "Gender_status",
+    "Department_status": "Department_status",
+    "Position_status": "Position_status",
+    "Joining Date_status": "Joining Date_status",
+    "Performance Score_status": "Performance Score_status",
+    "Employee Statement_status": "Employee Statement_status",
+    "Salary_validated": "Salary_validated",
+    "Gender_validated": "Gender_validated",
+    "Position_validated": "Position_validated",
+    "Joining Date_validated": "Joining Date_validated",
+    "Performance Score_validated": "Performance Score_validated",
+    "Department_validated": "Department_validated",
+    "Age_validated": "Age_validated",
+    "Employee Statement_validated": "Employee Statement_validated"
+  },
+  "value_normalisation": {
+    "Gender": {
+      "allowed_values": [
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "mapping": {}
+    },
+    "Department": {
+      "allowed_values": [
+        "HR",
+        "Finance",
+        "IT",
+        "Marketing",
+        "Sales"
+      ],
+      "mapping": {}
+    },
+    "Position": {
+      "allowed_values": [
+        "Director",
+        "Manager",
+        "Analyst",
+        "Clerk",
+        "Assistant"
+      ],
+      "mapping": {}
+    },
+    "Performance Score": {
+      "allowed_values": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F"
+      ],
+      "mapping": {}
+    }
+  },
+  "parsing_rules": {
+    "Age": {
+      "type": "numeric",
+      "description": "Convert text numbers (thirty, etc.) to integers",
+      "transformations": [
+        "Convert 'thirty' to 30",
+        "Convert 'thirty-five' or similar to numeric equivalents",
+        "Parse as integer"
+      ]
+    },
+    "Salary": {
+      "type": "numeric",
+      "description": "Standardize salary values to numeric format",
+      "transformations": [
+        "Convert 'NAN' and ' NAN ' to missing value marker",
+        "Convert 'SIXTY THOUSAND' to 60000",
+        "Remove spaces and parse as integer"
+      ]
+    },
+    "Joining Date": {
+      "type": "date",
+      "description": "Standardize date formats to YYYY-MM-DD",
+      "transformations": [
+        "Parse 'DD-MMM-YY' format (e.g., 05-Apr-18)",
+        "Parse 'YYYY.MM.DD' format (e.g., 2019.12.01)",
+        "Parse 'M/DD/YYYY' format (e.g., 2/20/2020)",
+        "Parse 'M/DD/YYYY' format (e.g., 1/15/2020)",
+        "Parse 'M/DD/YYYY' format (e.g., 3/25/2019)",
+        "Output as YYYY-MM-DD"
+      ]
+    },
+    "Performance Score": {
+      "type": "categorical",
+      "description": "Standardize performance scores",
+      "transformations": [
+        "Accept A, B, C, D, F as valid values",
+        "Convert 'MA' to missing value marker (appears to be data entry error)"
+      ]
+    },
+    "Employee Statement": {
+      "type": "text",
+      "description": "Standardize text field",
+      "transformations": [
+        "Trim whitespace",
+        "Convert 'MA' to missing value marker (appears to be truncated/corrupted)"
+      ]
+    }
+  },
+  "missing_value_policy": {
+    "representation": "",
+    "handling": "Preserve empty strings for missing values in output",
+    "affected_fields": [
+      "Age",
+      "Salary",
+      "Employee Statement"
+    ],
+    "special_cases": {
+      "NAN": "Convert to empty string",
+      "SIXTY THOUSAND": "Parse as 60000",
+      "MA": "Convert to empty string (data corruption indicator)"
+    }
+  },
+  "row_policy": {
+    "drop_rows": false
+  }
+}

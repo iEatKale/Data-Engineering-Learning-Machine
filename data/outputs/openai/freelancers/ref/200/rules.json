@@ -1,0 +1,98 @@
+{
+  "target_columns": [
+    "freelancer_ID",
+    "forename",
+    "surname",
+    "gender",
+    "age",
+    "country",
+    "language",
+    "primary_skill",
+    "years_of_experience",
+    "hourly_rate (USD)",
+    "rating",
+    "is_active",
+    "client_satisfaction"
+  ],
+  "rename_map": {
+    "name": [
+      "forename",
+      "surname"
+    ]
+  },
+  "value_normalisation": {
+    "gender": {
+      "F": "F",
+      "FEMALE": "F",
+      "female": "F",
+      "f": "F",
+      "M": "M",
+      "male": "M",
+      "MALE": "M",
+      "m": "M"
+    },
+    "primary_skill": {
+      "AI": "Artificial Intelligence",
+      "Artificial Intelligence": "Artificial Intelligence",
+      "Web Development": "Web Development",
+      "Cybersecurity": "Cybersecurity",
+      "Machine Learning": "Machine Learning",
+      "Data Analysis": "Data Analysis",
+      "Mobile Apps": "Mobile Apps",
+      "DevOps": "DevOps",
+      "UI/UX Design": "UI/UX Design"
+    },
+    "is_active": {
+      "Y": "Y",
+      "yes": "Y",
+      "1": "Y",
+      "TRUE": "Y",
+      "true": "Y",
+      "N": "N",
+      "no": "N",
+      "0": "N",
+      "FALSE": "N",
+      "false": "N",
+      "": "NULL",
+      "NULL": "NULL"
+    }
+  },
+  "parsing_rules": {
+    "hourly_rate (USD)": {
+      "remove_prefixes": [
+        "$",
+        "USD "
+      ],
+      "convert_to_integer": true,
+      "empty_to_null": true
+    },
+    "rating": {
+      "convert_to_float": true,
+      "empty_to_null": true
+    },
+    "client_satisfaction": {
+      "remove_suffix": [
+        "%"
+      ],
+      "convert_to_float": true,
+      "divide_by_100": true,
+      "empty_to_null": true
+    },
+    "years_of_experience": {
+      "convert_to_integer": true,
+      "empty_to_null": true
+    }
+  },
+  "missing_value_policy": {
+    "hourly_rate (USD)": "NULL",
+    "rating": "NULL",
+    "client_satisfaction": "NULL",
+    "years_of_experience": "NULL",
+    "is_active": "NULL",
+    "forename": "",
+    "surname": ""
+  },
+  "row_policy": {
+    "drop_rows": false
+  }
+}

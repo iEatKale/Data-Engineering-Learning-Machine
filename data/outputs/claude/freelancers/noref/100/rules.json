@@ -1,0 +1,130 @@
+{
+  "target_columns": [
+    "freelancer_ID",
+    "name",
+    "gender",
+    "age",
+    "country",
+    "language",
+    "primary_skill",
+    "years_of_experience",
+    "hourly_rate_usd",
+    "rating",
+    "is_active",
+    "client_satisfaction"
+  ],
+  "rename_map": {
+    "freelancer_ID": "freelancer_ID",
+    "name": "name",
+    "gender": "gender",
+    "age": "age",
+    "country": "country",
+    "language": "language",
+    "primary_skill": "primary_skill",
+    "years_of_experience": "years_of_experience",
+    "hourly_rate (USD)": "hourly_rate_usd",
+    "rating": "rating",
+    "is_active": "is_active",
+    "client_satisfaction": "client_satisfaction"
+  },
+  "value_normalisation": {
+    "gender": {
+      "allowed_values": [
+        "M",
+        "F"
+      ],
+      "mapping": {
+        "m": "M",
+        "M": "M",
+        "male": "M",
+        "MALE": "M",
+        "f": "F",
+        "F": "F",
+        "female": "F",
+        "FEMALE": "F",
+        "Female": "F"
+      }
+    },
+    "is_active": {
+      "allowed_values": [
+        0,
+        1
+      ],
+      "mapping": {
+        "0": 0,
+        "1": 1,
+        "TRUE": 1,
+        "True": 1,
+        "true": 1,
+        "yes": 1,
+        "Y": 1,
+        "FALSE": 0,
+        "False": 0,
+        "false": 0,
+        "no": 0,
+        "N": 0
+      }
+    },
+    "primary_skill": {
+      "allowed_values": [
+        "AI",
+        "Blockchain Development",
+        "Cybersecurity",
+        "Data Analysis",
+        "DevOps",
+        "Graphic Design",
+        "Machine Learning",
+        "Mobile Apps",
+        "UI/UX Design",
+        "Web Development"
+      ]
+    }
+  },
+  "parsing_rules": {
+    "hourly_rate_usd": {
+      "type": "numeric",
+      "description": "Remove currency symbols (USD, $) and convert to integer",
+      "pattern": "^(USD\\s*)?\\$?\\s*([0-9]+)$",
+      "extract_group": 2,
+      "output_type": "integer"
+    },
+    "rating": {
+      "type": "numeric",
+      "description": "Convert to float, allow range 0-5",
+      "output_type": "float",
+      "min": 0,
+      "max": 5
+    },
+    "client_satisfaction": {
+      "type": "numeric",
+      "description": "Remove % symbol and convert to integer (0-100)",
+      "pattern": "^([0-9]+)%?$",
+      "extract_group": 1,
+      "output_type": "integer",
+      "min": 0,
+      "max": 100
+    },
+    "age": {
+      "type": "numeric",
+      "description": "Convert to integer",
+      "output_type": "integer",
+      "min": 18,
+      "max": 100
+    },
+    "years_of_experience": {
+      "type": "numeric",
+      "description": "Convert to integer",
+      "output_type": "integer",
+      "min": 0
+    }
+  },
+  "missing_value_policy": {
+    "representation": "",
+    "description": "Use empty string for missing/unparseable values",
+    "numeric_fields": "empty string",
+    "categorical_fields": "empty string"
+  },
+  "row_policy": {
+    "drop_rows": false
+  }
+}
